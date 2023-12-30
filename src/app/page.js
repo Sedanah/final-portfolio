@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
+import { Github, Share } from "lucide-react";
 
 export default function Home() {
   return (
@@ -12,7 +13,10 @@ export default function Home() {
           <h1 className="text-base font-semibold text-white">*DARK MODE*</h1>
         </Link>
         <nav className="flex gap-4">
-          <Link href="https://emerald-kalina-14.tiiny.site" className="text-base font-semibold text-white">
+          <Link
+            href="/resume.pdf"
+            className="text-base font-semibold text-white"
+          >
             Resume
           </Link>
           <Link className="text-base font-semibold text-white" href="/#contact">
@@ -21,7 +25,7 @@ export default function Home() {
         </nav>
       </header>
       <main className="px-4">
-        <section className="pb-16">
+        <section className="pb-10">
           <h1 className="mb-4 text-4xl font-semibold text-white">
             <span style={{ marginRight: "0.3em" }}>Hi, I'm</span>
             <TypeAnimation
@@ -52,37 +56,17 @@ export default function Home() {
             realm
           </p>
         </section>
-        <section className="pt-10 pb-16">
+        <section className="pb-6 ">
           <h2 className="mb-4 text-base font-semibold text-white/90">
             Projects
           </h2>
 
           {/* //div for projects  */}
 
-          <div class="grid gap-4 gap-y-6 grid-cols-3 grid-rows-2">
-            <button class="bg-[#334155] opacity-45 hover:bg-[#14b8a6] text-white font-bold items-center rounded w-40 h-40">
-              Portfolio
-            </button>
-
-            <button class="bg-[#334155] opacity-45 hover:bg-[#14b8a6] text-white font-bold  items-center  rounded w-40 h-40">
-              AI model
-            </button>
-
-            <button class="bg-[#334155] opacity-45  hover:bg-[#14b8a6] text-white font-bold items-center rounded w-40 h-40">
-              Tutoring for Kids
-            </button>
-
-            <button class="bg-[#334155] opacity-45 hover:bg-[#14b8a6] text-wrap text-align: justify break-words text-white font-bold  items-center rounded w-40 h-40">
-              Finance Quant Projection
-            </button>
-
-            <button class="bg-[#334155] opacity-45  hover:bg-[#14b8a6] text-white font-bold  items-center  rounded w-40 h-40">
-              Photo Editor
-            </button>
-
-            <button class="bg-[#334155] opacity-45   hover:bg-[#14b8a6] text-white font-bold items-center rounded w-40 h-40">
-              XWCD Password Generator
-            </button>
+          <div class="grid grid-cols-2 gap-4">
+            {projects.map((project) => (
+              <ProjectCard {...project} />
+            ))}
           </div>
 
           {/* //experience section */}
@@ -106,14 +90,25 @@ export default function Home() {
                 </div>
 
                 <div className="grid gap-4 ml-8 grid-cols-content">
-                 <Link href="/" > <span className="text-white/50"> mashhour.h@northeastern.edu
-       </span> </Link>
-
-                  <Link href="https://www.linkedin.com/in/hadiahmashhour/" > <span className="text-white/50"> in/hadiahmashhour
-       </span> </Link>
-
-       <Link href=" https://github.com/Sedanah" > <span className="text-white/50"> git/Sedanah
-       </span> </Link>                </div>
+                  <Link href="/">
+                    {" "}
+                    <span className="text-white/50">
+                      {" "}
+                      mashhour.h@northeastern.edu
+                    </span>{" "}
+                  </Link>
+                  <Link href="https://www.linkedin.com/in/hadiahmashhour/">
+                    {" "}
+                    <span className="text-white/50">
+                      {" "}
+                      in/hadiahmashhour
+                    </span>{" "}
+                  </Link>
+                  <Link href=" https://github.com/Sedanah">
+                    {" "}
+                    <span className="text-white/50"> git/Sedanah</span>{" "}
+                  </Link>{" "}
+                </div>
               </div>
             </section>
           </section>
@@ -122,6 +117,90 @@ export default function Home() {
     </div>
   );
 }
+
+const projects = [
+  {
+    projectName: "Portfolio",
+    description: "A portfolio website to showcase my work",
+    techStack: "React, Next.js, TailwindCSS",
+    githubLink: "www.github.com",
+    liveLink: "",
+  },
+  {
+    projectName: "AI model",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+    techStack: "React, Next.js, TailwindCSS",
+    githubLink: "www.github.com",
+    liveLink: "",
+  },
+  {
+    projectName: "Tutoring for Kids",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+    techStack: "React, Next.js, TailwindCSS",
+    githubLink: "www.github.com",
+    liveLink: "",
+  },
+  {
+    projectName: "Projection",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+    techStack: "React, Next.js, TailwindCSS",
+    githubLink: "www.github.com",
+    liveLink: "",
+  },
+  {
+    projectName: "Photo Editor",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+    techStack: "React, Next.js, TailwindCSS",
+    githubLink: "www.github.com",
+    liveLink: "",
+  },
+  {
+    projectName: "Password Generator",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+    techStack: "Java, IntelliJ",
+    githubLink: "www.github.com",
+    liveLink: "",
+  },
+  
+];
+
+export const ProjectCard = ({
+  projectName,
+  description,
+  techStack,
+  githubLink,
+  liveLink,
+}) => {
+  const stack = techStack.split(", ");
+
+  return (
+    <div className="flex px-5 py-8 flex-col gap-2 justify-between bg-[#202a37] opacity-45 hover:bg-[#38bdf8] text-white rounded">
+      <div className="flex flex-row items-center justify-between">
+        <h3 className="text-xl font-bold text-white/90">{projectName}</h3>
+        {githubLink && (
+          <div className="flex items-center">
+            <a href={githubLink} target="_blank" rel="noopener noreferrer">
+              <Github className="w-6 h-6" />
+            </a>
+          </div>
+        )}
+        {liveLink && (
+          <div className="flex items-center">
+            <a href={liveLink} target="_blank" rel="noopener noreferrer">
+              <Share className="w-6 h-6" />
+            </a>
+          </div>
+        )}
+      </div>
+      <p className="text-white/70">{description}</p>
+      <div className="flex flex-row flex-wrap gap-2">
+        {stack.map((tech) => (
+          <span className="text-white/50">{tech}</span>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export const ExperienceCard = ({ date, company, role, description, index }) => {
   return (
@@ -152,7 +231,7 @@ export const ExperienceSection = () => {
           .map((experience, index) => (
             <ExperienceCard {...experience} key={index} index={index} />
           ))}
-      <button onClick={toggleShowAll} className="text-white/50 animate-pulse animate-bounce">
+      <button onClick={toggleShowAll} className="text-white/50 animate-bounce">
         {showAll ? "Show Less" : "Show More"}
       </button>
     </div>
