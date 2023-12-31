@@ -7,12 +7,6 @@ export const metadata = {
   title: 'Sedanah Mashhour',
   description:
     'Sedanah Mashhour is a CS + Business Student at Northeastern University',
-  twitter: {
-    card: 'summary_large_image',
-    creator: '@alexjpate',
-    images: ['/og.png'],
-    title: 'Sedanah Mashhour',
-  },
   openGraph: {
     title: 'Sedanah Mashhour',
     images: [
