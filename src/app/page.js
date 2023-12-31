@@ -78,7 +78,7 @@ export default function Home() {
           </h2>
 
 
-          <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {projects.map((project, index) => (
               <ProjectCard key={index}
               {...project} />
