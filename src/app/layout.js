@@ -6,26 +6,12 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   title: 'Sedanah Mashhour',
   description:
-    'Alex Pate is a product engineer based in Milan, currently building the future of payments at MoonPay. Working somewhere on the boundary between design and code',
-  twitter: {
-    card: 'summary_large_image',
-    creator: '@alexjpate',
-    images: ['/og.png'],
-    title: 'Alex Pate - Product Engineer',
-  },
+    'Sedanah Mashhour is a CS + Business Student at Northeastern University',
   openGraph: {
-    title: 'Alex Pate - Product Engineer',
-    images: [
-      {
-        url: '/og.png',
-        width: 1200,
-        height: 630,
-        alt: 'Alex Pate - Product Engineer',
-      },
-    ],
+    title: 'Sedanah Mashhour',
+    
     siteName: 'Sedanah Mashhour',
   },
-  metadataBase: new URL('https://alexjpate.com'),
 };
 
 export default function RootLayout({ children }) {
