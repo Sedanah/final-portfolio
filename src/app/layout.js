@@ -9,14 +9,7 @@ export const metadata = {
     'Sedanah Mashhour is a CS + Business Student at Northeastern University',
   openGraph: {
     title: 'Sedanah Mashhour',
-    images: [
-      {
-        url: '/og.png',
-        width: 1200,
-        height: 630,
-        alt: 'Sedanah Mashhour',
-      },
-    ],
+
     siteName: 'Sedanah Mashhour',
   },
   metadataBase: new URL('https://alexjpate.com'),
