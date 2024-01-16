@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
-import { Github, Share, Music4 } from "lucide-react";
+import { Github, Share, Music4, Linkedin } from "lucide-react";
 import { useInView } from 'react-intersection-observer';
 import FadeIn from 'react-fade-in';
 
@@ -16,8 +16,8 @@ export default function Home() {
     <FadeIn> 
       <header className="flex justify-between px-4 pt-16 pb-16">
       
-        <Link href="https://open.spotify.com/user/31d7aah4tewqmljc3qwfz4vr756e?si=5bdb980261464ccf">
-          <h1 className="text-base font-semibold text-white"> <Music4 /></h1>
+        <Link href="www.linkedin.com/in/hadiahmashhour">
+          <h1 className="text-base font-semibold text-white"> <Linkedin /></h1>
         </Link>
         <nav className="flex gap-4">
           <Link
@@ -182,6 +182,7 @@ const projects = [
 ];
 
 export const ProjectCard = ({
+ 
   projectName,
   description,
   techStack,
@@ -215,9 +216,13 @@ export const ProjectCard = ({
           <span key={index} className="text-[#64ffda]">{tech}</span>
         ))}
       </div>
+      
     </div>
+    
   );
 };
+
+
 
 export const ExperienceCard = ({ date, company, role, description, index }) => {
   return (
