@@ -9,7 +9,6 @@ export const metadata = {
     'Sedanah Mashhour is a CS + Business Student at Northeastern University',
   openGraph: {
     title: 'Sedanah Mashhour',
-    
     siteName: 'Sedanah Mashhour',
   },
 };
