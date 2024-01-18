@@ -263,7 +263,7 @@ export const ExperienceSection = () => {
 
 const experiences = [
   {
-    date: "Jan 2022 - July 2022",
+    date: "Dec 2023 - Present",
     company: "Give a Hand",
     role: "Software Development Engineer Intern",
     description:
