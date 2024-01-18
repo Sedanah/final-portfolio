@@ -263,6 +263,14 @@ export const ExperienceSection = () => {
 
 const experiences = [
   {
+    date: "Jan 2022 - July 2022",
+    company: "Give a Hand",
+    role: "Software Development Engineer Intern",
+    description:
+      "Developed a highly scalable and performant web application to automate the process of creating and managing Amazon's internal services, saving the company $1.5 million annually; utilized React, Node.js, and AWS to create a user-friendly UI and a robust backend, ensuring seamless integration with existing systems.",
+  },
+
+{
     date: "July 2023 - Dec. 2023",
     company: "BWSC",
     role: "Security Engineer + IT Programmer Co-op",
