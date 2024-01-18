@@ -16,7 +16,7 @@ export default function Home() {
     <FadeIn> 
       <header className="flex justify-between px-4 pt-16 pb-16">
       
-        <Link href="www.linkedin.com/in/hadiahmashhour">
+        <Link href="https://www.linkedin.com/in/hadiahmashhour/">
           <h1 className="text-base font-semibold text-white"> <Linkedin /></h1>
         </Link>
         <nav className="flex gap-4">
