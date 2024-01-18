@@ -271,7 +271,7 @@ const experiences = [
   },
 
 {
-    date: "July 2023 - Dec. 2023",
+    date: "July 2023 - Dec 2023",
     company: "BWSC",
     role: "Security Engineer + IT Programmer Co-op",
     description:
