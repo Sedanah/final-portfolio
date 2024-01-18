@@ -265,9 +265,15 @@ const experiences = [
   {
     date: "Dec 2023 - Present",
     company: "Give a Hand",
-    role: "Software Development Engineer Intern",
+    role: "Software Developer",
     description:
-      "Developed a highly scalable and performant web application to automate the process of creating and managing Amazon's internal services, saving the company $1.5 million annually; utilized React, Node.js, and AWS to create a user-friendly UI and a robust backend, ensuring seamless integration with existing systems.",
+    "Developed electronics, PCBs, and software for cutting-edge flight control boards (FCBs), data acquisition boards, and various hardware tools dedicated to enhancing control and data recording capabilities for rocket launches. Assisted the creation of FCBs equipped with advanced features such as GPS, live telemetry through radio communication, extensive flight data logging, and unparalleled support for a diverse range of parachute deployment conditions—outperforming other commercially available products in the market"
+
+
+
+
+
+
   },
 
 {
