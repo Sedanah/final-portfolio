@@ -42,7 +42,7 @@ export default function Home() {
 <span className="text-[#64ffda]">
             <TypeAnimation 
               sequence={[
-                // Same substring at the start will only be typed out once, initially
+                // Same substring at the start will only be typed out once, initially l
                 " Sedanah",
                 2000,
                 " a developer",
