@@ -262,17 +262,29 @@ export const ExperienceSection = () => {
 };
 
 const experiences = [
+
+{
+
+    date: "Jan 2024 - Present",
+
+    company: "Give a Hand Foundation",
+  
+    role: "Software Developer",
+
+    description: ""
+
+
+
+}, 
+
+
+
   {
     date: "Dec 2023 - Present",
-    company: "Give a Hand",
+    company: "AeroSpaceNU",
     role: "Software Developer",
     description:
     "Developed electronics, PCBs, and software for cutting-edge flight control boards (FCBs), data acquisition boards, and various hardware tools dedicated to enhancing control and data recording capabilities for rocket launches. Assisted the creation of FCBs equipped with advanced features such as GPS, live telemetry through radio communication, extensive flight data logging, and unparalleled support for a diverse range of parachute deployment conditions—outperforming other commercially available products in the market"
-
-
-
-
-
 
   },
 
