@@ -149,6 +149,9 @@ const projects = [
 {
   projectName: "Redshift - avionics",
   description: "Wokring on a team specializing in developing electronics, PCBs, and software for flight control boards (FCBs) and data acquisition boards, enhancing control and data recording during rocket launches. Using various software tools to continually add new features and improvements to the FCB and ground station software",
+  techStack: "Flutter, C, C#, Arduino",
+  githubLink: "www.github.com",
+  liveLink: "https://www.aerospacenu.com/redshift",
 }
 
 
