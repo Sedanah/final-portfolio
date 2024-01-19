@@ -138,7 +138,6 @@ const projects = [
     projectName: "Bionic Hand",
     description: "Assisted in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributed expertise in research, literature review, product design, prototyping, and coding, showcasing a comprehensive skill set in driving innovative solutions ",
     techStack: "Python, SolidWorks, Arduino",
-    githubLink: "www.github.com",
     liveLink: "https://www.giveahandclub.org/projects-7",
   },
 
@@ -147,7 +146,6 @@ const projects = [
     description:
       "Working on the avionics division specializing in developing electronics, PCBs, and software for flight control boards (FCBs) and data acquisition boards, enhancing control and data recording during rocket launches. Using various software tools to continually add new features and improvements to the FCB and ground station software",
     techStack: "Flutter, C, C#, Arduino",
-    githubLink: "www.github.com",
     liveLink: "https://www.aerospacenu.com/redshift",
   },
 
