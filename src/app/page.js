@@ -154,7 +154,7 @@ const projects = [
   liveLink: "https://www.aerospacenu.com/redshift",
 }
 
-
+,
 
   {
     projectName: "Portfolio",
