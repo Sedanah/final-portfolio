@@ -281,7 +281,7 @@ const experiences = [
   {
     date: "Jan 2024 - Present",
 
-    company: "Give a Hand Foundation",
+    company: "Give a Hand",
 
     role: "Software Developer",
 
