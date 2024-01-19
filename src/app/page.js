@@ -136,6 +136,23 @@ export default function Home() {
 }
 
 const projects = [
+
+{
+    projectName: "Bionic Hand",
+    description: "A bionic hand that is affordable and accessible to all. ",
+    techStack: "Python, SolidWorks, Arduino",
+    githubLink: "www.github.com",
+    liveLink: "",
+
+},
+
+{
+  projectName: "Redshift - avionics",
+  description: "Wokring on a team specializing in developing electronics, PCBs, and software for flight control boards (FCBs) and data acquisition boards, enhancing control and data recording during rocket launches. Using various software tools to continually add new features and improvements to the FCB and ground station software",
+}
+
+
+
   {
     projectName: "Portfolio",
     description: "A personal website with React and TailwindCSS, incorporating server-side rendering (SSR) and markdown components (MDX) to showcase personal projects and posts effectively",
