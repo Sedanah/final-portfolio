@@ -142,7 +142,7 @@ const projects = [
     description: "A bionic hand that is affordable and accessible to all. ",
     techStack: "Python, SolidWorks, Arduino",
     githubLink: "www.github.com",
-    liveLink: "",
+    liveLink: "https://www.giveahandclub.org/projects-7",
 
 },
 
