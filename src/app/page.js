@@ -4,87 +4,86 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 import { Github, Share, Music4, Linkedin } from "lucide-react";
-import { useInView } from 'react-intersection-observer';
-import FadeIn from 'react-fade-in';
-
-
+import { useInView } from "react-intersection-observer";
+import FadeIn from "react-fade-in";
 
 export default function Home() {
   return (
-  
     <div className="max-w-xl mx-auto ">
-    <FadeIn> 
-      <header className="flex justify-between px-4 pt-16 pb-16">
-      
-        <Link href="https://www.linkedin.com/in/hadiahmashhour/">
-          <h1 className="text-base font-semibold text-white"> <Linkedin /></h1>
-        </Link>
-        <nav className="flex gap-4">
-          <Link
-            href="/resume.pdf"
-            className="text-base font-semibold text-white"
-          >
-            Resume
+      <FadeIn>
+        <header className="flex justify-between px-4 pt-16 pb-16">
+          <Link href="https://www.linkedin.com/in/hadiahmashhour/">
+            <h1 className="text-base font-semibold text-white">
+              {" "}
+              <Linkedin />
+            </h1>
           </Link>
-          <Link className="text-base font-semibold text-white" href="/#contact">
-            Contact
-          </Link>
-        </nav>
-        
-      </header>
+          <nav className="flex gap-4">
+            <Link
+              href="/resume.pdf"
+              className="text-base font-semibold text-white"
+            >
+              Resume
+            </Link>
+            <Link
+              className="text-base font-semibold text-white"
+              href="/#contact"
+            >
+              Contact
+            </Link>
+          </nav>
+        </header>
       </FadeIn>
-     
+
       <main className="px-4">
         <section className="pb-10">
-    <FadeIn delay={300}>
-          <h1 className="mb-4 text-4xl font-semibold text-white">
-            <span style={{ marginRight: "0.3em" }}>Hi, I am</span>
-<span className="text-[#64ffda]">
-            <TypeAnimation 
-              sequence={[
-                // Same substring at the start will only be typed out once, initially l
-                " Sedanah",
-                2000,
-                " a developer",
-                1000,
-                " a designer",
-                1000,
-              ]}
-              wrapper="span"
-              speed={25}
-              style={{ fontSize: "1em", display: "inline-block" }}
-              repeat={Infinity}
-            />{" "}
-            <br />
-            </span>
-            <span className="text-white/60">
-              Passionate about crafting digital experiences
-            </span>
-          </h1>
-          <p className="text-base leading-6 text-white/70">
-            Hey, I am Hadiah! (but go by Sedanah). I am a student at Northeastern
-            University majoring in Computer Science and Business with a
-            concentration in Finance. Each past adventure fuels my passion and
-            pushes me closer to creating impactful connections in the digital
-            realm.
-          </p>
+          <FadeIn delay={300}>
+            <h1 className="mb-4 text-4xl font-semibold text-white">
+              <span style={{ marginRight: "0.3em" }}>Hi, I am</span>
+              <span className="text-[#64ffda]">
+                <TypeAnimation
+                  sequence={[
+                    // Same substring at the start will only be typed out once, initially l
+                    " Sedanah",
+                    2000,
+                    " a developer",
+                    1000,
+                    " a designer",
+                    1000,
+                  ]}
+                  wrapper="span"
+                  speed={25}
+                  style={{ fontSize: "1em", display: "inline-block" }}
+                  repeat={Infinity}
+                />{" "}
+                <br />
+              </span>
+              <span className="text-white/60">
+                Passionate about crafting digital experiences
+              </span>
+            </h1>
+            <p className="text-base leading-6 text-white/70">
+              Hey, I am Hadiah! (but go by Sedanah). I am a student at
+              Northeastern University majoring in Computer Science and Business
+              with a concentration in Finance. Each past adventure fuels my
+              passion and pushes me closer to creating impactful connections in
+              the digital realm.
+            </p>
           </FadeIn>
         </section>
-        
+
         <section className="pb-6 ">
-        <FadeIn delay={500}>
-          <h2 className="mb-4 text-base font-semibold text-[#64ffda]">
-            Projects
-          </h2>
+          <FadeIn delay={500}>
+            <h2 className="mb-4 text-base font-semibold text-[#64ffda]">
+              Projects
+            </h2>
 
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {projects.map((project, index) => (
-              <ProjectCard key={index}
-              {...project} />
-            ))}
-          </div>
-</FadeIn>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {projects.map((project, index) => (
+                <ProjectCard key={index} {...project} />
+              ))}
+            </div>
+          </FadeIn>
           {/* //experience section */}
 
           <section className="py-8">
@@ -131,34 +130,31 @@ export default function Home() {
         </section>
       </main>
     </div>
-    
   );
 }
 
 const projects = [
-
-{
+  {
     projectName: "Bionic Hand",
-    description: "A bionic hand that is affordable and accessible to all. ",
+    description: "Assisted in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributed expertise in research, literature review, product design, prototyping, and coding, showcasing a comprehensive skill set in driving innovative solutions ",
     techStack: "Python, SolidWorks, Arduino",
     githubLink: "www.github.com",
     liveLink: "https://www.giveahandclub.org/projects-7",
+  },
 
-},
-
-{
-  projectName: "Redshift - avionics",
-  description: "Wokring on a team specializing in developing electronics, PCBs, and software for flight control boards (FCBs) and data acquisition boards, enhancing control and data recording during rocket launches. Using various software tools to continually add new features and improvements to the FCB and ground station software",
-  techStack: "Flutter, C, C#, Arduino",
-  githubLink: "www.github.com",
-  liveLink: "https://www.aerospacenu.com/redshift",
-}
-
-,
+  {
+    projectName: "Redshift: Avionics",
+    description:
+      "Wokring on a team specializing in developing electronics, PCBs, and software for flight control boards (FCBs) and data acquisition boards, enhancing control and data recording during rocket launches. Using various software tools to continually add new features and improvements to the FCB and ground station software",
+    techStack: "Flutter, C, C#, Arduino",
+    githubLink: "www.github.com",
+    liveLink: "https://www.aerospacenu.com/redshift",
+  },
 
   {
     projectName: "Portfolio",
-    description: "A personal website with React and TailwindCSS, incorporating server-side rendering (SSR) and markdown components (MDX) to showcase personal projects and posts effectively",
+    description:
+      "A personal website with React and TailwindCSS, incorporating server-side rendering (SSR) and markdown components (MDX) to showcase personal projects and posts effectively",
     techStack: "React, Next.js, TailwindCSS",
     githubLink: "www.github.com",
     liveLink: "",
@@ -172,37 +168,39 @@ const projects = [
   },
   {
     projectName: "Tutoring for Kids",
-    description: "An inclusive educational platform offering free tutoring to disadvantaged children ",
+    description:
+      "An inclusive educational platform offering free tutoring to disadvantaged children ",
     techStack: "React, Next.js, TailwindCSS",
     githubLink: "www.github.com",
     liveLink: "",
   },
   {
     projectName: "Stock Prediction",
-    description: "Developed an advanced stock prediction web application leveraging machine learning models and real-time data analysis to empower investors with accurate insights ",
+    description:
+      "Developed an advanced stock prediction web application leveraging machine learning models and real-time data analysis to empower investors with accurate insights ",
     techStack: "Python",
     githubLink: "www.github.com",
     liveLink: "",
   },
   {
     projectName: "Photo Editor",
-    description: "Designed using the MVC design pattern, a photo editor that allows users to edit photos using a variety of tools.",
+    description:
+      "Designed using the MVC design pattern, a photo editor that allows users to edit photos using a variety of tools.",
     techStack: "Java, Swing, MVC",
     githubLink: "www.github.com",
     liveLink: "",
   },
   {
     projectName: "Password Generator",
-    description: "A password generator that generates a password based on user input using the XKCD method.",
+    description:
+      "A password generator that generates a password based on user input using the XKCD method.",
     techStack: "Java",
     githubLink: "www.github.com",
     liveLink: "",
   },
-  
 ];
 
 export const ProjectCard = ({
- 
   projectName,
   description,
   techStack,
@@ -233,16 +231,15 @@ export const ProjectCard = ({
       <p className="text-white/70 text-sm">{description}</p>
       <div className="flex flex-row flex-wrap gap-2">
         {stack.map((tech, index) => (
-          <span key={index} className="text-[#64ffda]">{tech}</span>
+          <span key={index} className="text-[#64ffda]">
+            {tech}
+          </span>
         ))}
       </div>
-      
     </div>
     // RAWR
   );
 };
-
-
 
 export const ExperienceCard = ({ date, company, role, description, index }) => {
   return (
@@ -277,58 +274,55 @@ export const ExperienceSection = () => {
         {showAll ? "Show Less" : "Show More"}
       </button>
     </div>
-    
   );
 };
 
 const experiences = [
-
-{
-
+  {
     date: "Jan 2024 - Present",
 
     company: "Give a Hand Foundation",
-  
+
     role: "Software Developer",
 
-    description: "Collaborated on innovative projects, focusing on the software aspects of developing a bionic hand. Played a crucial role in integrating electrical and mechanical components to bring forth a functional and affordable prosthetic device. Actively engaged in brainstorming sessions to generate novel ideas, conducted thorough research and literature reviews, and contributed to the product design and prototyping phases. Proficiently utilized coding skills to enhance the functionality of the bionic hand"
-
-
-}, 
-
-
+    description:
+      "Collaborated on innovative projects, focusing on the software aspects of developing a bionic hand. Played a crucial role in integrating electrical and mechanical components to bring forth a functional and affordable prosthetic device. Actively engaged in brainstorming sessions to generate novel ideas, conducted thorough research and literature reviews, and contributed to the product design and prototyping phases. Proficiently utilized coding skills to enhance the functionality of the bionic hand",
+  },
 
   {
     date: "Dec 2023 - Present",
     company: "AeroSpaceNU",
     role: "Software Developer",
     description:
-    "Developed electronics, PCBs, and software for cutting-edge flight control boards (FCBs), data acquisition boards, and various hardware tools dedicated to enhancing control and data recording capabilities for rocket launches. Assisted the creation of FCBs equipped with advanced features such as GPS, live telemetry through radio communication, extensive flight data logging, and unparalleled support for a diverse range of parachute deployment conditions—outperforming other commercially available products in the market"
-
+      "Developed electronics, PCBs, and software for cutting-edge flight control boards (FCBs), data acquisition boards, and various hardware tools dedicated to enhancing control and data recording capabilities for rocket launches. Assisted the creation of FCBs equipped with advanced features such as GPS, live telemetry through radio communication, extensive flight data logging, and unparalleled support for a diverse range of parachute deployment conditions—outperforming other commercially available products in the market",
   },
 
-{
+  {
     date: "July 2023 - Dec 2023",
     company: "BWSC",
     role: "Security Engineer + IT Programmer Co-op",
     description:
-"Applied engineering design methodologies to resolve complex issues, driving $4,000,000 quarterly savings; enhanced system security by 89% through Bash, Python automation scripts, and bolstered cloud infrastructure security with Barracuda firewalls while optimizing operations via AirWatch for peak performance."  },
+      "Applied engineering design methodologies to resolve complex issues, driving $4,000,000 quarterly savings; enhanced system security by 89% through Bash, Python automation scripts, and bolstered cloud infrastructure security with Barracuda firewalls while optimizing operations via AirWatch for peak performance.",
+  },
   {
     date: "May 2022 - June 2022",
     company: "Harvard University",
     role: "Bio-statistical Data Scientist",
     description:
-"Utilized R and Python to analyze extensive datasets, boosting data processing efficiency by 75% and maintaining data integrity; created a highly acclaimed user-friendly data visualization dashboard that garnered a 95% satisfaction rating from project stakeholders" },
+      "Utilized R and Python to analyze extensive datasets, boosting data processing efficiency by 75% and maintaining data integrity; created a highly acclaimed user-friendly data visualization dashboard that garnered a 95% satisfaction rating from project stakeholders",
+  },
   {
     date: "April 2021 - Sep 2021",
     company: "YKK",
     role: "Software engineer intern",
     description:
-"Revamped the Automated Inventory Management System (AIMS) for streamlined stock tracking, error reduction, and implemented a user-friendly UI redesign, resulting in a 20% decrease in training time while prioritizing bug fixes, testing, and comprehensive documentation."  },
+      "Revamped the Automated Inventory Management System (AIMS) for streamlined stock tracking, error reduction, and implemented a user-friendly UI redesign, resulting in a 20% decrease in training time while prioritizing bug fixes, testing, and comprehensive documentation.",
+  },
   {
     date: "May 2020 - July 2020",
     company: "MIST Atlanta",
     role: "Front-End Development",
     description:
-"Transformed MIST Atlanta's website with sophisticated front-end development, achieving a 60% traffic surge and a 45% boost in user engagement; utilized leading-edge design techniques, improving user experience, aesthetics, and addressing user queries, elevating the organization's online presence significantly."  },
+      "Transformed MIST Atlanta's website with sophisticated front-end development, achieving a 60% traffic surge and a 45% boost in user engagement; utilized leading-edge design techniques, improving user experience, aesthetics, and addressing user queries, elevating the organization's online presence significantly.",
+  },
 ];
