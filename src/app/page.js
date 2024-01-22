@@ -292,7 +292,7 @@ const experiences = [
     company: "AeroSpaceNU",
     role: "Software Developer",
     description:
-      "Developed electronics, PCBs, and software for cutting-edge flight control boards (FCBs), data acquisition boards, and various hardware tools dedicated to enhancing control and data recording capabilities for rocket launches. Assisted the creation of FCBs equipped with advanced features such as GPS, live telemetry through radio communication, extensive flight data logging, and unparalleled support for a diverse range of parachute deployment conditions—outperforming other commercially available products in the market",
+      "Working in the RedShift division to develop electronics, PCBs, and software for cutting-edge flight control boards (FCBs), data acquisition boards, and various hardware tools dedicated to enhancing control and data recording capabilities for rocket launches. Assisting the creation of FCBs equipped with advanced features such as GPS, live telemetry through radio communication, extensive flight data logging, and unparalleled support for a diverse range of parachute deployment conditions—outperforming other commercially available products in the market",
   },
 
   {
