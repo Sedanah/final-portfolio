@@ -278,6 +278,14 @@ export const ExperienceSection = () => {
 const experiences = [
   {
     date: "Jan 2024 - Present",
+    company: "Oasis",
+    role: " Mentor",
+    description:
+"Oversaw and directed a team of four in the development of a cross-platform mobile application utilizing various frameworks. Orchestrated regular meetings with leadership and design leads to uphold project alignment and monitor progress.Conducted comprehensive code reviews, optimized git workflows, and cultivated a culture of self-discovery to enhance problem-solving skills and deliver high-quality code."
+  },
+  
+  {
+    date: "Jan 2024 - Present",
 
     company: "Give a Hand",
 
@@ -287,13 +295,7 @@ const experiences = [
       "Collaborated on innovative projects, focusing on the software aspects of developing a bionic hand. Played a crucial role in integrating electrical and mechanical components to bring forth a functional and affordable prosthetic device. Actively engaged in brainstorming sessions to generate novel ideas, conducted thorough research and literature reviews, and contributed to the product design and prototyping phases. Proficiently utilized coding skills to enhance the functionality of the bionic hand",
   },
 
-  {
-    date: "Jan 2024 - Present",
-    company: "Oasis",
-    role: " Mentor",
-    description:
-"Oversaw and directed a team of four in the development of a cross-platform mobile application utilizing various frameworks. Orchestrated regular meetings with leadership and design leads to uphold project alignment and monitor progress.Conducted comprehensive code reviews, optimized git workflows, and cultivated a culture of self-discovery to enhance problem-solving skills and deliver high-quality code."
-  },
+  
 
 
 {
