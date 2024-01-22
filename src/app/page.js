@@ -281,9 +281,9 @@ const experiences = [
     company: "Oasis",
     role: " Mentor",
     description:
-"Oversaw and directed a team of four in the development of a cross-platform mobile application utilizing various frameworks. Orchestrated regular meetings with leadership and design leads to uphold project alignment and monitor progress.Conducted comprehensive code reviews, optimized git workflows, and cultivated a culture of self-discovery to enhance problem-solving skills and deliver high-quality code."
+"Overseeing and directing a team of four in the development of a cross-platform mobile application utilizing various frameworks. Orchestrating regular meetings with leadership and design leads to uphold project alignment and monitor progress. Conducting comprehensive code reviews, optimizing git workflows, and cultivating a culture of self-discovery to enhance problem-solving skills and deliver high-quality code."
   },
-  
+
   {
     date: "Jan 2024 - Present",
 
