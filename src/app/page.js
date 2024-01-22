@@ -288,11 +288,20 @@ const experiences = [
   },
 
   {
+    date: "Jan 2024 - Present",
+    company: "Oasis",
+    role: " Mentor",
+    description:
+"Oversaw and directed a team of four in the development of a cross-platform mobile application utilizing various frameworks. Orchestrated regular meetings with leadership and design leads to uphold project alignment and monitor progress.Conducted comprehensive code reviews, optimized git workflows, and cultivated a culture of self-discovery to enhance problem-solving skills and deliver high-quality code."
+  },
+
+
+{
     date: "Dec 2023 - Present",
     company: "AeroSpaceNU",
     role: "Software Developer",
     description:
-      "Working in the RedShift division to develop electronics, PCBs, and software for cutting-edge flight control boards (FCBs), data acquisition boards, and various hardware tools dedicated to enhancing control and data recording capabilities for rocket launches. Assisting the creation of FCBs equipped with advanced features such as GPS, live telemetry through radio communication, extensive flight data logging, and unparalleled support for a diverse range of parachute deployment conditions—outperforming other commercially available products in the market",
+      "Working in the avionics division to develop electronics, PCBs, and software for cutting-edge flight control boards (FCBs), data acquisition boards, and various hardware tools dedicated to enhancing control and data recording capabilities for rocket launches. Assisting the creation of FCBs equipped with advanced features such as GPS, live telemetry through radio communication, extensive flight data logging, and unparalleled support for a diverse range of parachute deployment conditions—outperforming other commercially available products in the market",
   },
 
   {
