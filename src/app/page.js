@@ -289,7 +289,7 @@ const experiences = [
     company: "NU Sci",
     role: " Software Engineer",
     description:
-"Involved in full-stack web development divided in 5 phases of a custom guided project. Working with concepts like Github and remote database"  },
+"Involved in full-stack web development divided in 5 phases of a custom guided project. Working with various concepts"  },
   {
     date: "Jan 2024 - Present",
 
