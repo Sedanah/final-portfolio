@@ -275,6 +275,7 @@ export const ExperienceSection = () => {
   );
 };
 
+
 const experiences = [
   {
     date: "Jan 2024 - Present",
@@ -298,8 +299,7 @@ const experiences = [
     role: "Software Developer",
 
     description:
-      "Collaborated on innovative projects, focusing on the software aspects of developing a bionic hand. Played a crucial role in integrating electrical and mechanical components to bring forth a functional and affordable prosthetic device. Actively engaged in brainstorming sessions to generate novel ideas, conducted thorough research and literature reviews, and contributed to the product design and prototyping phases. Proficiently utilized coding skills to enhance the functionality of the bionic hand",
-  },
+      "Developng and focusing on the software components to bring forth a functional and affordable prosthetic device. Actively engaged in brainstorming sessions to generate novel ideas, conducting thorough research and literature reviews, and contributing to the product design and prototyping phases. Developing a machine learning based software solution in Python, integrated with Arduino MyoWare sensors, to enhance the functionality; Implementing optimization transformations to reduce sensor noise and improve accuracy, ensuring precise control over hand movements based on muscle activity"},
 
 
 {
