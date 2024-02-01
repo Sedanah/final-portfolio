@@ -285,6 +285,15 @@ const experiences = [
     description:
 "Overseeing and directing a team of four in the development of a cross-platform mobile application utilizing various frameworks. Orchestrating regular meetings with leadership and design leads to uphold project alignment and monitor progress. Conducting comprehensive code reviews, optimizing git workflows, and cultivating a culture of self-discovery to enhance problem-solving skills and deliver high-quality code."
   },
+
+  {
+    date: "Jan 2024-Present",
+    company: "NEU Blockchain",
+    hyperlink: "https://northeasternblockchain.xyz/",
+    role: " Software member",
+    description:
+
+  }
   {
     date: "Jan 2024 - Present",
     company: "NU Sci",
@@ -315,8 +324,7 @@ const experiences = [
     company: "BWSC",
     role: "Security Engineer + IT Programmer Co-op",
     description:
-      "Applied engineering design methodologies to resolve complex issues, driving $4,000,000 quarterly savings; enhanced system security by 89% through Bash, Python automation scripts, and bolstered cloud infrastructure security with Barracuda firewalls while optimizing operations via AirWatch for peak performance.",
-  },
+"Worked with Azure Cloud infrastructure and Barracuda CloudGen firewalls to implement robust security measures, improving overall system security and network integrity by 56%. Orchestrated efficient mobile device management, regulated data quality checks, and troubleshot issues to propel the organization toward peak performance through AirWatch. Collaborated with AI and Cybersecurity teams to contribute to the creation of machine learning models specialized in threat detection, anomaly detection, and behavior analysis."  },
   {
     date: "May 2022 - June 2022",
     company: "Harvard University",
