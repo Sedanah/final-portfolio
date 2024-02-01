@@ -287,19 +287,12 @@ const experiences = [
   },
 
   {
-    date: "Jan 2024-Present",
-    company: "NEU Blockchain",
-    hyperlink: "https://northeasternblockchain.xyz/",
-    role: " Software member",
-    description:
-
-  }
-  {
     date: "Jan 2024 - Present",
     company: "NU Sci",
     role: " Software Engineer",
     description:
 "Involved in full-stack web development divided in 5 phases of a custom guided project. Working with various concepts"  },
+
   {
     date: "Jan 2024 - Present",
 
