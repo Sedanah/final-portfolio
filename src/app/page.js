@@ -189,9 +189,9 @@ const projects = [
     liveLink: "",
   },
   {
-    projectName: "Password Generator",
+    projectName: "PassGen",
     description:
-      "A password generator that generates a password based on user input using the XKCD method.",
+      "A password generator that generates a secure password based on user input using the XKCD method.",
     techStack: "Java",
     githubLink: "www.github.com",
     liveLink: "",
