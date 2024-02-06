@@ -159,7 +159,7 @@ const projects = [
   },
   {
     projectName: "NU Sci",
-    description: " onducted comprehensive user research to identify usability pain points, leading to the implementation of a more intuitive navigation system and responsive design, ensuring seamless access across various devices and screen sizes. ",
+    description: "Conducted comprehensive user research to identify usability pain points, leading to the implementation of a more intuitive navigation system and responsive design, ensuring seamless access across various devices and screen sizes. ",
     techStack: "React, Next.js, TailwindCSS",
     githubLink: "",
     liveLink: "https://nuscimagazine.com/",
