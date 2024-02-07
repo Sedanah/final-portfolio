@@ -136,7 +136,7 @@ export default function Home() {
 const projects = [
   {
     projectName: "Bionic Hand",
-    description: "Assisting in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributing expertise in research, literature review, product design, prototyping, and coding, showcasing a comprehensive skill set in driving innovative solutions ",
+    description: "Assisting in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributing expertise in research, literature review, product design, prototyping, and coding, showcasing a comprehensive skill set in driving innovative solutions. ",
     techStack: "Python, SolidWorks, Arduino",
     liveLink: "https://www.giveahandclub.org/projects-7",
   },
@@ -144,7 +144,7 @@ const projects = [
   {
     projectName: "Redshift",
     description:
-      "Working on the avionics division specializing in developing electronics, PCBs, and software for flight control boards (FCBs) and data acquisition boards, enhancing control and data recording during rocket launches. Using various software tools to continually add new features and improvements to the FCB and ground station software",
+      "Working on the avionics division specializing in developing electronics, PCBs, and software for flight control boards (FCBs) and data acquisition boards, enhancing control and data recording during rocket launches. Using various software tools to continually add new features and improvements to the FCB and ground station software.",
     techStack: "Flutter, C, C#, Arduino",
     liveLink: "https://www.aerospacenu.com/redshift",
   },
@@ -152,7 +152,7 @@ const projects = [
   {
     projectName: "Portfolio",
     description:
-      "A personal website with React and TailwindCSS, incorporating server-side rendering (SSR) and markdown components (MDX) to showcase personal projects and posts effectively",
+      "A personal website with React and TailwindCSS, incorporating server-side rendering (SSR) and markdown components (MDX) to showcase personal projects and posts effectively.",
     techStack: "React, Next.js, TailwindCSS",
     githubLink: "https://github.com/Sedanah/final-portfolio",
     liveLink: "",
@@ -167,7 +167,7 @@ const projects = [
   {
     projectName: "Tutoring for Kids",
     description:
-      "An inclusive educational platform offering free tutoring to disadvantaged children ",
+      "An inclusive educational platform offering free tutoring to disadvantaged children.",
     techStack: "React, Next.js, TailwindCSS",
     githubLink: "www.github.com",
     liveLink: "",
@@ -175,7 +175,7 @@ const projects = [
   {
     projectName: "Stock Prediction",
     description:
-      "Developed an advanced stock prediction web application leveraging machine learning models and real-time data analysis to empower investors with accurate insights ",
+      "Developed an advanced stock prediction web application leveraging machine learning models and real-time data analysis to empower investors with accurate insights.",
     techStack: "Python",
     githubLink: "www.github.com",
     liveLink: "",
