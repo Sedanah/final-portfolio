@@ -193,7 +193,7 @@ const projects = [
     description:
       "A password generator that generates a secure password based on user input using the XKCD method.",
     techStack: "Java",
-    githubLink: "www.github.com",
+    githubLink: "https://github.com/Sedanah/XKCD-Password-Generator",
     liveLink: "",
   },
 ];
