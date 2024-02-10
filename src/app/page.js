@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
-import { Github, Share, Music4, Linkedin, BookMarked} from "lucide-react";
+import { Github, Share, Music4, Linkedin} from "lucide-react";
 import { useInView } from "react-intersection-observer";
 import FadeIn from "react-fade-in";
 
