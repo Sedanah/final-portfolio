@@ -140,7 +140,7 @@ const projects = [
     description: "Assisting in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributing expertise in research, literature review, product design, prototyping, and coding, showcasing a comprehensive skill set in driving innovative solutions. ",
     techStack: "Python, SolidWorks, Arduino",
     liveLink: "https://www.giveahandclub.org/projects-7",
- 
+    
   },
 
   {
@@ -285,8 +285,7 @@ const experiences = [
     hyperlink: "https://oasisneu.com/",
     role: " Mentor",
     description:
-"Led a team of four in developing a cross-platform mobile app, coordinated meetings to ensure project alignment, conducted code reviews, optimized git workflows, and promoted self-learning to improve problem-solving and code quality.", 
-
+"Overseeing and directing a team of four in the development of a cross-platform mobile application utilizing various frameworks. Orchestrating regular meetings with leadership and design leads to uphold project alignment and monitor progress. Conducting comprehensive code reviews, optimizing git workflows, and cultivating a culture of self-discovery to enhance problem-solving skills and deliver high-quality code."
   },
 
   {
@@ -294,7 +293,7 @@ const experiences = [
     company: "NU Sci",
     role: " Software Engineer",
     description:
-"Involved in full-stack web development divided in 5 phases of a custom guided project. Working with various concepts."  },
+"Involved in full-stack web development divided in 5 phases of a custom guided project. Working with various concepts"  },
 
   {
     date: "Jan 2024 - Present",
@@ -304,10 +303,7 @@ const experiences = [
     role: "Software Developer",
 
     description:
-      "Developing software for an affordable prosthetic device, involving in brainstorming, researching, designing, and creating machine learning solutions to improve functionality and accuracy ensuring precise control of hand movements.",
-
-
-},
+      "Developng and focusing on the software components to bring forth a functional and affordable prosthetic device. Actively engaged in brainstorming sessions to generate novel ideas, conducting thorough research and literature reviews, and contributing to the product design and prototyping phases. Developing a machine learning based software solution in Python, integrated with Arduino MyoWare sensors, to enhance the functionality; Implementing optimization transformations to reduce sensor noise and improve accuracy, ensuring precise control over hand movements based on muscle activity"},
 
 
 {
@@ -315,7 +311,7 @@ const experiences = [
     company: "AeroSpaceNU",
     role: "Software Developer",
     description:
-      "Implemented Azure Cloud and Barracuda CloudGen firewalls to enhance system security and network integrity by 56%. Managed mobile devices and conducted data quality checks using AirWatch, improving organizational performance. Worked with AI and Cybersecurity teams to develop machine learning models for threat, anomaly, and behavior analysis.",
+      "Working in the avionics division to develop electronics, PCBs, and software for cutting-edge flight control boards (FCBs), data acquisition boards, and various hardware tools dedicated to enhancing control and data recording capabilities for rocket launches. Assisting the creation of FCBs equipped with advanced features such as GPS, live telemetry through radio communication, extensive flight data logging, and unparalleled support for a diverse range of parachute deployment conditions—outperforming other commercially available products in the market",
   },
 
   {
