@@ -285,7 +285,7 @@ const experiences = [
     hyperlink: "https://oasisneu.com/",
     role: " Mentor",
     description:
-"Led a team of four in developing a cross-platform mobile app, coordinated meetings to ensure project alignment, conducted code reviews, optimized git workflows, and promoted self-learning to improve problem-solving and code quality."
+"Led a team of four in developing a cross-platform mobile app, coordinated meetings to ensure project alignment, conducted code reviews, optimized git workflows, and promoted self-learning to improve problem-solving and code quality.", 
 
   },
 
@@ -304,7 +304,7 @@ const experiences = [
     role: "Software Developer",
 
     description:
-      "Developing software for an affordable prosthetic device, involving in brainstorming, researching, designing, and creating machine learning solutions to improve functionality and accuracy ensuring precise control of hand movements."
+      "Developing software for an affordable prosthetic device, involving in brainstorming, researching, designing, and creating machine learning solutions to improve functionality and accuracy ensuring precise control of hand movements.",
 
 
 },
