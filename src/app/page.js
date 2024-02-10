@@ -37,7 +37,7 @@ export default function Home() {
 
       <main className="px-4">
         <section className="pb-10">
-          <FadeIn delay={300}>
+          {/* <FadeIn delay={300}> */}
             <h1 className="mb-4 text-4xl font-semibold text-white">
               <span style={{ marginRight: "0.3em" }}>Hi, I am</span>
               <span className="text-[#64ffda]">
@@ -69,11 +69,11 @@ export default function Home() {
               passion and pushes me closer to creating impactful connections in
               the digital realm.
             </p>
-          </FadeIn>
+          {/* </FadeIn> */}
         </section>
 
         <section className="pb-6 ">
-          <FadeIn delay={500}>
+          {/* <FadeIn delay={500}> */}
             <h2 className="mb-4 text-base font-semibold text-[#64ffda]">
               Projects
             </h2>
@@ -83,7 +83,7 @@ export default function Home() {
                 <ProjectCard key={index} {...project} />
               ))}
             </div>
-          </FadeIn>
+          {/* </FadeIn> */}
           {/* //experience section */}
 
           <section className="py-8">
