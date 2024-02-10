@@ -140,7 +140,7 @@ const projects = [
     description: "Assisting in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributing expertise in research, literature review, product design, prototyping, and coding, showcasing a comprehensive skill set in driving innovative solutions. ",
     techStack: "Python, SolidWorks, Arduino",
     liveLink: "https://www.giveahandclub.org/projects-7",
-    BookMarked: href = "/Abstract.pdf"
+    BookMarked: "/Abstract.pdf"
   },
 
   {
@@ -306,8 +306,6 @@ const experiences = [
     description:
       "Developing software for an affordable prosthetic device, involving in brainstorming, researching, designing, and creating machine learning solutions to improve functionality and accuracy ensuring precise control of hand movements.",
 
-
-
 },
 
 
@@ -316,7 +314,7 @@ const experiences = [
     company: "AeroSpaceNU",
     role: "Software Developer",
     description:
-      "Working in the avionics division to develop electronics, PCBs, and software for cutting-edge flight control boards (FCBs), data acquisition boards, and various hardware tools dedicated to enhancing control and data recording capabilities for rocket launches. Assisting the creation of FCBs equipped with advanced features such as GPS, live telemetry through radio communication, extensive flight data logging, and unparalleled support for a diverse range of parachute deployment conditions—outperforming other commercially available products in the market",
+      "Implemented Azure Cloud and Barracuda CloudGen firewalls to enhance system security and network integrity by 56%. Managed mobile devices and conducted data quality checks using AirWatch, improving organizational performance. Worked with AI and Cybersecurity teams to develop machine learning models for threat, anomaly, and behavior analysis.",
   },
 
   {
