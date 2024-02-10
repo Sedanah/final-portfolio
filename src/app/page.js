@@ -140,7 +140,7 @@ const projects = [
     description: "Assisting in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributing expertise in research, literature review, product design, prototyping, and coding, showcasing a comprehensive skill set in driving innovative solutions. ",
     techStack: "Python, SolidWorks, Arduino",
     liveLink: "https://www.giveahandclub.org/projects-7",
-    BookMarked: "/Abstract.pdf"
+ 
   },
 
   {
@@ -305,6 +305,8 @@ const experiences = [
 
     description:
       "Developing software for an affordable prosthetic device, involving in brainstorming, researching, designing, and creating machine learning solutions to improve functionality and accuracy ensuring precise control of hand movements.",
+//Developng and focusing on the software components to bring forth a functional and affordable prosthetic device. Actively engaged in brainstorming sessions to generate novel ideas, conducting thorough research and literature reviews, and contributing to the product design and prototyping phases. Developing a machine learning based software solution in Python, integrated with Arduino MyoWare sensors, to enhance the functionality; Implementing optimization transformations to reduce sensor noise and improve accuracy, ensuring precise control over hand movements based on muscle activity
+
 
 },
 
