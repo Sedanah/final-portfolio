@@ -4,13 +4,13 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 import { Github, Share, Music4, Linkedin} from "lucide-react";
-import FadeIn from "react-fade-in";
+//import FadeIn from "react-fade-in";
 //slayj
 
 export default function Home() {
   return (
     <div className="max-w-xl mx-auto ">
-      <FadeIn>
+      {/* //<FadeIn> */}
         <header className="flex justify-between px-4 pt-16 pb-16">
           <Link href="https://www.linkedin.com/in/hadiahmashhour/">
             <h1 className="text-base font-semibold text-white">
@@ -33,7 +33,7 @@ export default function Home() {
             </Link>
           </nav>
         </header>
-      </FadeIn>
+      {/* //</FadeIn> */}
 
       <main className="px-4">
         <section className="pb-10">
