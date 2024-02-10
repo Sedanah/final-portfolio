@@ -4,9 +4,8 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 import { Github, Share, Music4, Linkedin} from "lucide-react";
-import { useInView } from "react-intersection-observer";
 import FadeIn from "react-fade-in";
-//slay
+//slayj
 
 export default function Home() {
   return (
