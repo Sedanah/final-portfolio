@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Github, Share, Music4, Linkedin} from "lucide-react";
 import { useInView } from "react-intersection-observer";
 import FadeIn from "react-fade-in";
-
+//slay
 
 export default function Home() {
   return (
