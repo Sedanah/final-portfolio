@@ -10,16 +10,10 @@ import { motion, useAnimation } from 'framer-motion'
 
 
 export default function Home() {
-  const ref = useRef(null); // Create the ref here
-
   return (
-    <div className="max-w-xl mx-auto ">
-      <motion.main
-        ref={ref} // Use the ref here
-        initial={{ y: 0, opacity: 0 }}
-        // You need to define 'controls' or remove it if it's not used
-      >
-        <header className="flex justify-between px-4 pt-16 pb-16"></header>
+
+      <div className="max-w-xl mx-auto ">
+
         <header className="flex justify-between px-4 pt-16 pb-16">
           <Link href="https://www.linkedin.com/in/hadiahmashhour/">
             <h1 className="text-base font-semibold text-white">
@@ -42,7 +36,7 @@ export default function Home() {
             </Link>
           </nav>
         </header>
-</motion.main>
+
     
       
       <main className="px-4">
@@ -137,7 +131,7 @@ export default function Home() {
             </section>
           </section>
         </section>
-      </main>
+      </main></>
    
     </div>
   );
