@@ -10,7 +10,7 @@ import FadeIn from "react-fade-in";
 export default function Home() {
   return (
     <div className="max-w-xl mx-auto ">
-      <FadeIn>
+  
         <header className="flex justify-between px-4 pt-16 pb-16">
           <Link href="https://www.linkedin.com/in/hadiahmashhour/">
             <h1 className="text-base font-semibold text-white">
@@ -33,11 +33,11 @@ export default function Home() {
             </Link>
           </nav>
         </header>
-      </FadeIn>
+   
 
       <main className="px-4">
         <section className="pb-10">
-          <FadeIn delay={300}>
+          
             <h1 className="mb-4 text-4xl font-semibold text-white">
               <span style={{ marginRight: "0.3em" }}>Hi, I am</span>
               <span className="text-[#64ffda]">
@@ -69,11 +69,12 @@ export default function Home() {
               passion and pushes me closer to creating impactful connections in
               the digital realm.
             </p>
-          </FadeIn>
+      
         </section>
 
         <section className="pb-6 ">
-          <FadeIn delay={500}>
+         
+         </section>
             <h2 className="mb-4 text-base font-semibold text-[#64ffda]">
               Projects
             </h2>
@@ -83,7 +84,7 @@ export default function Home() {
                 <ProjectCard key={index} {...project} />
               ))}
             </div>
-          </FadeIn>
+       
           {/* //experience section */}
 
           <section className="py-8">
@@ -127,8 +128,8 @@ export default function Home() {
               </div>
             </section>
           </section>
-        </section>
-      </main>
+          </main>
+   
     </div>
   );
 }
