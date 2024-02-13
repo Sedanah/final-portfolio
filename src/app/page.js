@@ -4,7 +4,7 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 import { Github, Share, Music4, Linkedin} from "lucide-react";
-import FadeIn from "react-fade-in";
+
 
 
 export default function Home() {
