@@ -4,13 +4,13 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 import { Github, Share, Music4, Linkedin} from "lucide-react";
-
+import Fade from "react-reveal/Fade";
 
 
 export default function Home() {
   return (
     <div className="max-w-xl mx-auto ">
-  
+  <Fade>
         <header className="flex justify-between px-4 pt-16 pb-16">
           <Link href="https://www.linkedin.com/in/hadiahmashhour/">
             <h1 className="text-base font-semibold text-white">
@@ -33,11 +33,11 @@ export default function Home() {
             </Link>
           </nav>
         </header>
-   
+   </Fade>
 
       <main className="px-4">
         <section className="pb-10">
-          
+          <Fade>
             <h1 className="mb-4 text-4xl font-semibold text-white">
               <span style={{ marginRight: "0.3em" }}>Hi, I am</span>
               <span className="text-[#64ffda]">
@@ -69,12 +69,11 @@ export default function Home() {
               passion and pushes me closer to creating impactful connections in
               the digital realm.
             </p>
-      
+            </Fade>
         </section>
 
         <section className="pb-6 ">
-         
-         </section>
+          <Fade>
             <h2 className="mb-4 text-base font-semibold text-[#64ffda]">
               Projects
             </h2>
@@ -84,7 +83,7 @@ export default function Home() {
                 <ProjectCard key={index} {...project} />
               ))}
             </div>
-       
+          </Fade>
           {/* //experience section */}
 
           <section className="py-8">
@@ -127,6 +126,7 @@ export default function Home() {
                 </div>
               </div>
             </section>
+          </section>
           </section>
           </main>
    
