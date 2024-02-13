@@ -4,13 +4,20 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 import { Github, Share, Music4, Linkedin} from "lucide-react";
-import Fade from "react-reveal/Fade";
+import { motion, useAnimation } from 'framer-motion'
+
+
 
 
 export default function Home() {
   return (
-    <div className="max-w-xl mx-auto ">
-  <Fade>
+
+      <div className="max-w-xl mx-auto ">
+<motion.main
+      ref={ref}
+      initial={{ y: 0, opacity: 0, }}
+      animate={controls}
+    >
         <header className="flex justify-between px-4 pt-16 pb-16">
           <Link href="https://www.linkedin.com/in/hadiahmashhour/">
             <h1 className="text-base font-semibold text-white">
@@ -33,57 +40,57 @@ export default function Home() {
             </Link>
           </nav>
         </header>
-   </Fade>
-
+</motion.main>
+    
+      
       <main className="px-4">
         <section className="pb-10">
-          <Fade>
-            <h1 className="mb-4 text-4xl font-semibold text-white">
-              <span style={{ marginRight: "0.3em" }}>Hi, I am</span>
-              <span className="text-[#64ffda]">
-                <TypeAnimation
-                  sequence={[
-                    // Same substring at the start will only be typed out once, initially l
-                    " Sedanah",
-                    2000,
-                    " a developer",
-                    1000,
-                    " a designer",
-                    1000,
-                  ]}
-                  wrapper="span"
-                  speed={25}
-                  style={{ fontSize: "1em", display: "inline-block" }}
-                  repeat={Infinity}
-                />{" "}
-                <br />
-              </span>
-              <span className="text-white/60">
-                Passionate about crafting digital experiences
-              </span>
-            </h1>
-            <p className="text-base leading-6 text-white/70">
-              Hey, I am Hadiah! (but go by Sedanah). I am a student at
-              Northeastern University majoring in Computer Science and Business
-              with a concentration in Finance. Each past adventure fuels my
-              passion and pushes me closer to creating impactful connections in
-              the digital realm.
-            </p>
-            </Fade>
+
+          <h1 className="mb-4 text-4xl font-semibold text-white">
+            <span style={{ marginRight: "0.3em" }}>Hi, I am</span>
+            <span className="text-[#64ffda]">
+              <TypeAnimation
+                sequence={[
+                  // Same substring at the start will only be typed out once, initially l
+                  " Sedanah",
+                  2000,
+                  " a developer",
+                  1000,
+                  " a designer",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={25}
+                style={{ fontSize: "1em", display: "inline-block" }}
+                repeat={Infinity} />{" "}
+              <br />
+            </span>
+            <span className="text-white/60">
+              Passionate about crafting digital experiences
+            </span>
+          </h1>
+          <p className="text-base leading-6 text-white/70">
+            Hey, I am Hadiah! (but go by Sedanah). I am a student at
+            Northeastern University majoring in Computer Science and Business
+            with a concentration in Finance. Each past adventure fuels my
+            passion and pushes me closer to creating impactful connections in
+            the digital realm.
+          </p>
+
         </section>
 
         <section className="pb-6 ">
-          <Fade>
-            <h2 className="mb-4 text-base font-semibold text-[#64ffda]">
-              Projects
-            </h2>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {projects.map((project, index) => (
-                <ProjectCard key={index} {...project} />
-              ))}
-            </div>
-          </Fade>
+          <h2 className="mb-4 text-base font-semibold text-[#64ffda]">
+            Projects
+          </h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {projects.map((project, index) => (
+              <ProjectCard key={index} {...project} />
+            ))}
+          </div>
+
           {/* //experience section */}
 
           <section className="py-8">
@@ -127,8 +134,8 @@ export default function Home() {
               </div>
             </section>
           </section>
-          </section>
-          </main>
+        </section>
+      </main></>
    
     </div>
   );
