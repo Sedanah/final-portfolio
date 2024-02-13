@@ -4,7 +4,6 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 import { Github, Share, Music4, Linkedin} from "lucide-react";
-import { motion, useAnimation } from 'framer-motion'
 
 
 
