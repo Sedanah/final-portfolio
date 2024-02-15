@@ -2,43 +2,37 @@
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
-import { Github, Share, Music4, Linkedin} from "lucide-react";
-
-
+import { Github, Share, Linkedin } from "lucide-react";
 
 export default function Home() {
   return (
-
-      <div className="max-w-xl mx-auto ">
-
-        <header className="flex justify-between px-4 pt-16 pb-16">
-          <Link href="https://www.linkedin.com/in/hadiahmashhour/">
-            <h1 className="text-base font-semibold text-white">
-              {" "}
-              <Linkedin />
-            </h1>
+    <div className="max-w-xl mx-auto ">
+      <header className="flex justify-between px-4 pt-16 pb-16">
+        <Link href="https://www.linkedin.com/in/hadiahmashhour/">
+          <h1 className="text-base font-semibold text-white">
+            {" "}
+            <Linkedin />
+          </h1>
+        </Link>
+        <nav className="flex gap-4">
+          <Link href="/projects" className="text-base font-semibold text-white">
+            Projects
           </Link>
-          <nav className="flex gap-4">
-            <Link
-              href="/resume.pdf"
-              className="text-base font-semibold text-white"
-            >
-              Resume
-            </Link>
-            <Link
-              className="text-base font-semibold text-white"
-              href="/#contact"
-            >
-              Contact
-            </Link>
-          </nav>
-        </header>
 
-    
-      
+          <Link
+            href="/resume.pdf"
+            className="text-base font-semibold text-white"
+          >
+            Resume
+          </Link>
+          <Link className="text-base font-semibold text-white" href="/#contact">
+            Contact
+          </Link>
+        </nav>
+      </header>
+
       <main className="px-4">
         <section className="pb-10">
-
           <h1 className="mb-4 text-4xl font-semibold text-white">
             <span style={{ marginRight: "0.3em" }}>Hi, I am</span>
             <span className="text-[#64ffda]">
@@ -55,7 +49,8 @@ export default function Home() {
                 wrapper="span"
                 speed={25}
                 style={{ fontSize: "1em", display: "inline-block" }}
-                repeat={Infinity} />{" "}
+                repeat={Infinity}
+              />{" "}
               <br />
             </span>
             <span className="text-white/60">
@@ -69,11 +64,9 @@ export default function Home() {
             passion and pushes me closer to creating impactful connections in
             the digital realm.
           </p>
-
         </section>
 
         <section className="pb-6 ">
-
           <h2 className="mb-4 text-base font-semibold text-[#64ffda]">
             Projects
           </h2>
@@ -129,35 +122,32 @@ export default function Home() {
           </section>
         </section>
       </main>
-
     </div>
   );
 }
 
 const projects = [
-
-
   {
     projectName: "NomadNet",
-    description: "Leading the development of a travel planning platform designed to connect like-minded travelers, facilitating shared experiences and collaborative itinerary creation. Implementing key features including a sophisticated matching algorithm to connect users with similar travel plans. Deploying a CI/CD pipeline for efficient development, testing, and deployment processes.",
+    description:
+      "Leading the development of a travel planning platform designed to connect like-minded travelers, facilitating shared experiences and collaborative itinerary creation. Implementing key features including a sophisticated matching algorithm to connect users with similar travel plans. Deploying a CI/CD pipeline for efficient development, testing, and deployment processes.",
     techStack: "React, TailwindCSS, MongoDB",
     githubLink: "",
   },
 
   {
     projectName: "DeFi Savings Platform",
-    description: "Building a platform that enables users to earn interest on their cryptocurrency holdings through a decentralized savings account. Unlike traditional savings accounts, this DeFi application operates on blockchain technology, ensuring transparency, security, and without the need for intermediaries like banks.",
+    description:
+      "Building a platform that enables users to earn interest on their cryptocurrency holdings through a decentralized savings account. Unlike traditional savings accounts, this DeFi application operates on blockchain technology, ensuring transparency, security, and without the need for intermediaries like banks.",
     techStack: "Solidity, Ethereum, Web3.js, Metamask",
     githubLink: "",
-  }
-,
+  },
   {
     projectName: "Bionic Hand",
-    description: "Assisting in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributing expertise in research, literature review, product design, prototyping, and coding. ",
+    description:
+      "Assisting in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributing expertise in research, literature review, product design, prototyping, and coding. ",
     techStack: "Python, SolidWorks, Arduino",
     liveLink: "https://www.giveahandclub.org/projects-7",
-
-    
   },
 
   {
@@ -178,7 +168,8 @@ const projects = [
   },
   {
     projectName: "NU Sci",
-    description: "Conducting comprehensive user research to identify usability pain points, leading to the implementation of a more intuitive navigation system and responsive design, ensuring seamless access across various devices and screen sizes. ",
+    description:
+      "Conducting comprehensive user research to identify usability pain points, leading to the implementation of a more intuitive navigation system and responsive design, ensuring seamless access across various devices and screen sizes. ",
     techStack: "React, Next.js, TailwindCSS",
     githubLink: "",
     liveLink: "https://nuscimagazine.com/",
@@ -217,8 +208,6 @@ const projects = [
   },
 ];
 
-
-
 export const ProjectCard = ({
   projectName,
   description,
@@ -231,7 +220,7 @@ export const ProjectCard = ({
   return (
     <div className="transition ease-in-out hover:-translate-y-1 flex px-5 py-8 flex-col gap-2 justify-between bg-[#202a377a] hover:bg-[#14342d] text-white rounded">
       <div className="flex flex-row items-center justify-between">
-        <h3 className="text-xl font-bold  text-white/90">{projectName}</h3>
+        <h3 className="text-xl font-bold text-white/90">{projectName}</h3>
         {githubLink && (
           <div className="flex items-center">
             <a href={githubLink} target="_blank" rel="noopener noreferrer">
@@ -247,7 +236,7 @@ export const ProjectCard = ({
           </div>
         )}
       </div>
-      <p className="text-white/70 text-sm">{description}</p>
+      <p className="text-sm text-white/70">{description}</p>
       <div className="flex flex-row flex-wrap gap-2">
         {stack.map((tech, index) => (
           <span key={index} className="text-[#64ffda]">
@@ -289,13 +278,15 @@ export const ExperienceSection = () => {
           .map((experience, index) => (
             <ExperienceCard {...experience} key={index} index={index} />
           ))}
-      <button onClick={toggleShowAll} className="text-[#64ffda] animate-bounce text-2xl">
+      <button
+        onClick={toggleShowAll}
+        className="text-[#64ffda] animate-bounce text-2xl"
+      >
         {showAll ? "Show Less" : "Show More"}
       </button>
     </div>
   );
 };
-
 
 const experiences = [
   {
@@ -304,7 +295,7 @@ const experiences = [
     hyperlink: "https://oasisneu.com/",
     role: " Mentor",
     description:
-"Overseeing and directing a team of four in the development of a cross-platform mobile application utilizing various frameworks. Orchestrating regular meetings with leadership and design leads to uphold project alignment and monitor progress. Conducting comprehensive code reviews, optimizing git workflows, and cultivating a culture of self-discovery to enhance problem-solving skills and deliver high-quality code"
+      "Overseeing and directing a team of four in the development of a cross-platform mobile application utilizing various frameworks. Orchestrating regular meetings with leadership and design leads to uphold project alignment and monitor progress. Conducting comprehensive code reviews, optimizing git workflows, and cultivating a culture of self-discovery to enhance problem-solving skills and deliver high-quality code",
   },
 
   {
@@ -312,7 +303,8 @@ const experiences = [
     company: "NU Sci",
     role: " Software Engineer",
     description:
-"Involved in full-stack web development divided in 5 phases of a custom guided project. Working with various concepts"  },
+      "Involved in full-stack web development divided in 5 phases of a custom guided project. Working with various concepts",
+  },
 
   {
     date: "Jan 2024 - Present",
@@ -322,10 +314,10 @@ const experiences = [
     role: "Software Developer",
 
     description:
-      "Developng and focusing on the software components to bring forth a functional and affordable prosthetic device. Actively engaged in brainstorming sessions to generate novel ideas, conducting thorough research and literature reviews, and contributing to the product design and prototyping phases. Developing a machine learning based software solution in Python, integrated with Arduino MyoWare sensors, to enhance the functionality; Implementing optimization transformations to reduce sensor noise and improve accuracy, ensuring precise control over hand movements based on muscle activity."},
+      "Developng and focusing on the software components to bring forth a functional and affordable prosthetic device. Actively engaged in brainstorming sessions to generate novel ideas, conducting thorough research and literature reviews, and contributing to the product design and prototyping phases. Developing a machine learning based software solution in Python, integrated with Arduino MyoWare sensors, to enhance the functionality; Implementing optimization transformations to reduce sensor noise and improve accuracy, ensuring precise control over hand movements based on muscle activity.",
+  },
 
-
-{
+  {
     date: "Dec 2023 - Present",
     company: "AeroSpaceNU",
     role: "Software Developer",
@@ -338,7 +330,8 @@ const experiences = [
     company: "BWSC",
     role: "Security Engineer + IT Programmer Co-op",
     description:
-"Worked with Azure Cloud infrastructure and Barracuda CloudGen firewalls to implement robust security measures, improving overall system security and network integrity by 56%. Orchestrated efficient mobile device management, regulated data quality checks, and troubleshot issues to propel the organization toward peak performance through AirWatch. Collaborated with AI and Cybersecurity teams to contribute to the creation of machine learning models specialized in threat detection, anomaly detection, and behavior analysis."  },
+      "Worked with Azure Cloud infrastructure and Barracuda CloudGen firewalls to implement robust security measures, improving overall system security and network integrity by 56%. Orchestrated efficient mobile device management, regulated data quality checks, and troubleshot issues to propel the organization toward peak performance through AirWatch. Collaborated with AI and Cybersecurity teams to contribute to the creation of machine learning models specialized in threat detection, anomaly detection, and behavior analysis.",
+  },
   {
     date: "May 2022 - June 2022",
     company: "Harvard University",
