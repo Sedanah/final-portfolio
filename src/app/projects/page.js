@@ -13,7 +13,7 @@ export const ProjectCard = ({
 }) => {
   const stack = techStack.split(", ");
   return (
-    <div className="transition ease-in-out hover:-translate-y-1 flex px-5 py-8 flex-col gap-2 justify-between bg-[#202a377a] hover:bg-[#14342d] text-white rounded">
+    <div className="transition ease-in-out hover:-translate-y-1 flex px-5 py-8 flex-col gap-2 justify-between bg-[#112240] hover:bg-[#14342d] text-white rounded">
       <div className="flex flex-row items-center justify-between">
         <h3 className="text-xl font-bold text-white/90">{projectName}</h3>
         {githubLink && (
@@ -155,7 +155,7 @@ export default function Page() {
         </nav>
       </header>
       <section className="pb-6">
-        <h2 className="mb-4 text-base font-semibold text-[#64ffda]">
+        <h2 className="mb-4 text-xl font-semibold text-[#64ffda]">
           Projects
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

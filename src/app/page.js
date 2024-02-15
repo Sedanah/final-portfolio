@@ -178,7 +178,7 @@ export const ProjectCard = ({
   const stack = techStack.split(", ");
 
   return (
-    <div className="transition ease-in-out hover:-translate-y-1 flex px-5 py-8 flex-col gap-2 justify-between bg-[#202a377a] hover:bg-[#14342d] text-white rounded">
+    <div className="transition ease-in-out hover:-translate-y-1 flex px-5 py-8 flex-col gap-2 justify-between bg-[#132546] hover:bg-[#134e4a6e] text-white rounded">
       <div className="flex flex-row items-center justify-between">
         <h3 className="text-xl font-bold text-white/90">{projectName}</h3>
         {githubLink && (
@@ -233,21 +233,20 @@ export const ExperienceSection = () => {
     <div className="space-y-6">
       <ExperienceCard {...experiences[0]} />
       {showAll &&
-        experiences
-          .slice(1)
-          .map((experience, index) => (
-            <ExperienceCard {...experience} key={index} index={index} />
-          ))}
-      <button
-        onClick={toggleShowAll}
-        className="text-[#64ffda] animate-bounce text-xl"
-      >
-        {showAll ? "Show Less" : "Show More"}
-      </button>
+        experiences.slice(1).map((experience, index) => (
+          <ExperienceCard {...experience} key={index} index={index} />
+        ))}
+      <div className="flex justify-center mt-8 ">
+        <button
+          onClick={toggleShowAll}
+          className="text-[#64ffda]  bg-[#112240] border-solid border-2 border-[#64ffda] rounded animate-pulse px-4 py-2"
+        >
+          {showAll ? "Show Less" : "Show More"}
+        </button>
+      </div>
     </div>
   );
 };
-
 const experiences = [
   {
     date: "Jan 2024 - Present",
@@ -255,9 +254,16 @@ const experiences = [
     hyperlink: "https://oasisneu.com/",
     role: " Mentor",
     description:
-      "Overseeing and directing a team of four in the development of a cross-platform mobile application utilizing various frameworks. Orchestrating regular meetings with leadership and design leads to uphold project alignment and monitor progress. Conducting comprehensive code reviews, optimizing git workflows, and cultivating a culture of self-discovery to enhance problem-solving skills and deliver high-quality code",
+      "Leading a team of four in the development of a cross-platform mobile application utilizing various frameworks. ",
   },
 
+  {
+    date: "Jan 2024 - Present",
+    company: "NU Blockchain",
+    role: " Software Engineer",
+    description:
+      "Developing a decentralized application (dApp) to facilitate the exchange of digital assets and NFTs. ",
+  },
   {
     date: "Jan 2024 - Present",
     company: "NU Sci",
@@ -274,15 +280,14 @@ const experiences = [
     role: "Software Developer",
 
     description:
-      "Developng and focusing on the software components to bring forth a functional and affordable prosthetic device. Actively engaged in brainstorming sessions to generate novel ideas, conducting thorough research and literature reviews, and contributing to the product design and prototyping phases. Developing a machine learning based software solution in Python, integrated with Arduino MyoWare sensors, to enhance the functionality; Implementing optimization transformations to reduce sensor noise and improve accuracy, ensuring precise control over hand movements based on muscle activity.",
-  },
+    "Developing software to create an affordable bionic prosthetic hand. Contributing to the product design, research, and prototyping phases. Developing a machine learning based software solution"},
 
   {
     date: "Dec 2023 - Present",
     company: "AeroSpaceNU",
     role: "Software Developer",
     description:
-      "Working in the avionics division to develop electronics, PCBs, and software for cutting-edge flight control boards (FCBs), data acquisition boards, and various hardware tools dedicated to enhancing control and data recording capabilities for rocket launches. Assisting the creation of FCBs equipped with advanced features such as GPS, live telemetry through radio communication, extensive flight data logging, and unparalleled support for a diverse range of parachute deployment conditions—outperforming other commercially available products in the market",
+      "Working in the avionics division to develop PCBs and software for flight control and data aquisition boards (FCBs) dedicated to enhancing control and data recording capabilities for rocket launches. Adding features such as live telemetry through radio communication and extensive flight data logging.",
   },
 
   {
@@ -290,7 +295,7 @@ const experiences = [
     company: "BWSC",
     role: "Security Engineer + IT Programmer Co-op",
     description:
-      "Worked with Azure Cloud infrastructure and Barracuda CloudGen firewalls to implement robust security measures, improving overall system security and network integrity by 56%. Orchestrated efficient mobile device management, regulated data quality checks, and troubleshot issues to propel the organization toward peak performance through AirWatch. Collaborated with AI and Cybersecurity teams to contribute to the creation of machine learning models specialized in threat detection, anomaly detection, and behavior analysis.",
+      "Worked with Azure Cloud infrastructure and Barracuda CloudGen firewalls to implement robust security measures. Collaborated with AI and Cybersecurity teams to contribute to the creation of machine learning models specialized in threat detection, anomaly detection, and behavior analysis.",
   },
   {
     date: "May 2022 - June 2022",
@@ -299,18 +304,6 @@ const experiences = [
     description:
       "Utilized R and Python to analyze extensive datasets, boosting data processing efficiency by 75% and maintaining data integrity; created a highly acclaimed user-friendly data visualization dashboard that garnered a 95% satisfaction rating from project stakeholders",
   },
-  {
-    date: "April 2021 - Sep 2021",
-    company: "YKK",
-    role: "Software engineer intern",
-    description:
-      "Revamped the Automated Inventory Management System (AIMS) for streamlined stock tracking, error reduction, and implemented a user-friendly UI redesign, resulting in a 20% decrease in training time while prioritizing bug fixes, testing, and comprehensive documentation.",
-  },
-  {
-    date: "May 2020 - July 2020",
-    company: "MIST Atlanta",
-    role: "Front-End Development",
-    description:
-      "Transformed MIST Atlanta's website with sophisticated front-end development, achieving a 60% traffic surge and a 45% boost in user engagement; utilized leading-edge design techniques, improving user experience, aesthetics, and addressing user queries, elevating the organization's online presence significantly.",
-  },
+ 
+  
 ];
