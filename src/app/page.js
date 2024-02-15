@@ -1,10 +1,8 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 import { Github, Share, Music4, Linkedin} from "lucide-react";
-
 
 
 
@@ -131,12 +129,21 @@ export default function Home() {
           </section>
         </section>
       </main>
-   
+
     </div>
   );
 }
 
 const projects = [
+
+
+  {
+    projectName: "NomadNet",
+    description: "Leading the development of NomadNet, a pioneering travel planning platform designed to connect like-minded travelers, facilitating shared experiences and collaborative itinerary creation. Implemented key features including a sophisticated matching algorithm to connect users with similar travel plans, a real-time collaborative planning tool, and a comprehensive user verification and rating system to ensure safety and trust within the community. Deployed a CI/CD pipeline for efficient development, testing, and deployment processes, reducing time-to-market and enabling rapid iteration based on user feedback.",
+    techStack: "React, Next.js, TailwindCSS, MongoDB",
+    githubLink: "",
+  },
+
   {
     projectName: "Bionic Hand",
     description: "Assisting in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributing expertise in research, literature review, product design, prototyping, and coding, showcasing a comprehensive skill set in driving innovative solutions. ",
