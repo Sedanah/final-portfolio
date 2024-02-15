@@ -41,7 +41,7 @@ export default function Home() {
 
           <h1 className="mb-4 text-4xl font-semibold text-white">
             <span style={{ marginRight: "0.3em" }}>Hi, I am</span>
-            <span className="text-[#0284c7]">
+            <span className="text-[#64ffda]">
               <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed out once, initially l
