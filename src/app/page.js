@@ -140,7 +140,7 @@ const projects = [
   {
     projectName: "NomadNet",
     description: "Leading the development of a travel planning platform designed to connect like-minded travelers, facilitating shared experiences and collaborative itinerary creation. Implementing key features including a sophisticated matching algorithm to connect users with similar travel plans. Deploying a CI/CD pipeline for efficient development, testing, and deployment processes, reducing time-to-market and enabling rapid iteration based on user feedback.",
-    techStack: "React, Next.js, TailwindCSS, MongoDB",
+    techStack: "React, TailwindCSS, MongoDB",
     githubLink: "",
   },
 
