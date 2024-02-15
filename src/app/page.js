@@ -171,7 +171,7 @@ const projects = [
   {
     projectName: "Portfolio",
     description:
-      "A personal website with React and TailwindCSS, incorporating server-side rendering (SSR) and markdown components (MDX) to showcase personal projects and posts effectively.",
+      "Built this personal website with React and TailwindCSS, incorporating server-side rendering (SSR) and markdown components (MDX) to showcase personal projects and posts effectively.",
     techStack: "React, Next.js, TailwindCSS",
     githubLink: "https://github.com/Sedanah/final-portfolio",
     liveLink: "",
