@@ -145,6 +145,13 @@ const projects = [
   },
 
   {
+    projectName: "DeFi Savings Platform",
+    description: "Building a platform that enables users to earn interest on their cryptocurrency holdings through a decentralized savings account. Unlike traditional savings accounts, this DeFi application operates on blockchain technology, ensuring transparency, security, and without the need for intermediaries like banks.",
+    techStack: "Solidity, Ethereum, Web3.js, Metamask",
+    githubLink: "",
+  }
+
+  {
     projectName: "Bionic Hand",
     description: "Assisting in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributing expertise in research, literature review, product design, prototyping, and coding, showcasing a comprehensive skill set in driving innovative solutions. ",
     techStack: "Python, SolidWorks, Arduino",
