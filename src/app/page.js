@@ -139,7 +139,7 @@ const projects = [
 
   {
     projectName: "NomadNet",
-    description: "Leading the development of a travel planning platform designed to connect like-minded travelers, facilitating shared experiences and collaborative itinerary creation. Implementing key features including a sophisticated matching algorithm to connect users with similar travel plans. Deploying a CI/CD pipeline for efficient development, testing, and deployment processes, reducing time-to-market and enabling rapid iteration based on user feedback.",
+    description: "Leading the development of a travel planning platform designed to connect like-minded travelers, facilitating shared experiences and collaborative itinerary creation. Implementing key features including a sophisticated matching algorithm to connect users with similar travel plans. Deploying a CI/CD pipeline for efficient development, testing, and deployment processes.",
     techStack: "React, TailwindCSS, MongoDB",
     githubLink: "",
   },
@@ -153,7 +153,7 @@ const projects = [
 ,
   {
     projectName: "Bionic Hand",
-    description: "Assisting in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributing expertise in research, literature review, product design, prototyping, and coding, showcasing a comprehensive skill set in driving innovative solutions. ",
+    description: "Assisting in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributing expertise in research, literature review, product design, prototyping, and coding. ",
     techStack: "Python, SolidWorks, Arduino",
     liveLink: "https://www.giveahandclub.org/projects-7",
 
@@ -163,7 +163,7 @@ const projects = [
   {
     projectName: "Redshift",
     description:
-      "Working on the avionics division specializing in developing electronics, PCBs, and software for flight control boards (FCBs) and data acquisition boards, enhancing control and data recording during rocket launches. Using various software tools to continually add new features and improvements to the FCB and ground station software.",
+      "Working on the avionics division specializing in developing PCBs and software for flight control boards (FCBs) and data acquisition boards, enhancing control and data recording during rocket launches. Using various software tools to continually add new features and improvements to the FCB and ground station software.",
     techStack: "Flutter, C, C#, Arduino",
     liveLink: "https://www.aerospacenu.com/redshift",
   },
@@ -216,6 +216,16 @@ const projects = [
     liveLink: "",
   },
 ];
+
+
+
+
+
+
+
+
+
+
 
 export const ProjectCard = ({
   projectName,
