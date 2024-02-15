@@ -150,7 +150,7 @@ const projects = [
     techStack: "Solidity, Ethereum, Web3.js, Metamask",
     githubLink: "",
   }
-
+,
   {
     projectName: "Bionic Hand",
     description: "Assisting in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributing expertise in research, literature review, product design, prototyping, and coding, showcasing a comprehensive skill set in driving innovative solutions. ",
