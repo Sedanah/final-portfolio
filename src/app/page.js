@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
-import { Github, Share, Linkedin } from "lucide-react";
+import { Github, Share, Linkedin, Link2 } from "lucide-react";
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href="/resume.pdf"
+            href="/Resume.pdf"
             className="text-base font-semibold text-white"
           >
             Resume
@@ -67,9 +67,16 @@ export default function Home() {
         </section>
 
         <section className="pb-6 ">
-          <h2 className="mb-4 text-base font-semibold text-[#64ffda]">
-            Projects
-          </h2>
+  <div className="flex justify-between items-center mb-4">
+    <h2 className="text-base font-semibold text-[#64ffda]">Projects</h2>
+    <Link href="/projects">
+      <div className="  text-sm text-[#64ffda] font-semibold bg-[#202a377a] hover:bg-[#14342d] transition duration-300 ease-in-out py-1 px-2 rounded animate-bounce">
+        View more projects
+      </div> 
+    </Link>
+  </div>
+
+            
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {projects.map((project, index) => (
@@ -158,54 +165,7 @@ const projects = [
     liveLink: "https://www.aerospacenu.com/redshift",
   },
 
-  {
-    projectName: "Portfolio",
-    description:
-      "Built this personal website with React and TailwindCSS, incorporating server-side rendering (SSR) and markdown components (MDX) to showcase personal projects and posts effectively.",
-    techStack: "React, Next.js, TailwindCSS",
-    githubLink: "https://github.com/Sedanah/final-portfolio",
-    liveLink: "",
-  },
-  {
-    projectName: "NU Sci",
-    description:
-      "Conducting comprehensive user research to identify usability pain points, leading to the implementation of a more intuitive navigation system and responsive design, ensuring seamless access across various devices and screen sizes. ",
-    techStack: "React, Next.js, TailwindCSS",
-    githubLink: "",
-    liveLink: "https://nuscimagazine.com/",
-  },
-  {
-    projectName: "Tutoring for Kids",
-    description:
-      "An inclusive educational platform offering free tutoring to disadvantaged children.",
-    techStack: "React, Next.js, TailwindCSS",
-    githubLink: "www.github.com",
-    liveLink: "",
-  },
-  {
-    projectName: "Stock Prediction",
-    description:
-      "Developed an advanced stock prediction web application leveraging machine learning models and real-time data analysis to empower investors with accurate insights.",
-    techStack: "Python",
-    githubLink: "www.github.com",
-    liveLink: "",
-  },
-  {
-    projectName: "Photo Editor",
-    description:
-      "Designed using the MVC design pattern, a photo editor that allows users to edit photos using a variety of tools.",
-    techStack: "Java, Swing, MVC",
-    githubLink: "www.github.com",
-    liveLink: "",
-  },
-  {
-    projectName: "PassGen",
-    description:
-      "A password generator that generates a secure password based on user input using the XKCD method.",
-    techStack: "Java",
-    githubLink: "https://github.com/Sedanah/XKCD-Password-Generator",
-    liveLink: "",
-  },
+  
 ];
 
 export const ProjectCard = ({
@@ -280,7 +240,7 @@ export const ExperienceSection = () => {
           ))}
       <button
         onClick={toggleShowAll}
-        className="text-[#64ffda] animate-bounce text-2xl"
+        className="text-[#64ffda] animate-bounce text-xl"
       >
         {showAll ? "Show Less" : "Show More"}
       </button>

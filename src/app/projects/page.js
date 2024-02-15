@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { Github, Share, Linkedin } from "lucide-react";
+import { Github, Share, Linkedin , Home} from "lucide-react";
 
 // Define the ProjectCard component
 export const ProjectCard = ({
@@ -126,15 +126,18 @@ const projects = [
 
 ];
 
-// Main Page component
 export default function Page() {
   return (
     <div className="max-w-xl mx-auto">
       <header className="flex justify-between px-4 pt-16 pb-16">
-        <Link href="/#page">
+        <Link href="/page">
            <div className="text-base font-semibold text-white">
 
-           Home
+
+           <Link href="/#page">
+
+            <Home />
+            </Link>
 
            </div>
           
