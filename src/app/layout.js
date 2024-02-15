@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <meta property="og:title" content={metadata.openGraph.title} />
       </head>
-      <body className={`bg-[#070b1b] w-screen h-screen ${inter.className}`}>
+      <body className={`bg-[#0a192f] w-screen h-screen ${inter.className}`}>
         {children}
       </body>
     </html>

@@ -70,7 +70,7 @@ export default function Home() {
   <div className="flex justify-between items-center mb-4">
     <h2 className="text-base font-semibold text-[#64ffda]">Projects</h2>
     <Link href="/projects">
-      <div className="  text-sm text-[#64ffda] font-semibold bg-[#202a377a] hover:bg-[#14342d] transition duration-300 ease-in-out py-1 px-2 rounded animate-bounce">
+      <div className="  text-sm text-[#64ffda] font-semibold bg-[#0A1930] hover:bg-[#14342d] transition duration-300 ease-in-out py-1 px-2 rounded animate-bounce">
         View more projects
       </div> 
     </Link>
