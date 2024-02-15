@@ -287,7 +287,7 @@ export const ExperienceSection = () => {
           .map((experience, index) => (
             <ExperienceCard {...experience} key={index} index={index} />
           ))}
-      <button onClick={toggleShowAll} className="text-[#64ffda] animate-bounce">
+      <button onClick={toggleShowAll} className="text-[#64ffda] animate-bounce text-2xl">
         {showAll ? "Show Less" : "Show More"}
       </button>
     </div>
