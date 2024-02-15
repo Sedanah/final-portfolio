@@ -41,7 +41,7 @@ export default function Home() {
 
           <h1 className="mb-4 text-4xl font-semibold text-white">
             <span style={{ marginRight: "0.3em" }}>Hi, I am</span>
-            <span className="text-[#64ffda]">
+            <span className="text-[#d8ff64]">
               <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed out once, initially l
@@ -216,14 +216,6 @@ const projects = [
     liveLink: "",
   },
 ];
-
-
-
-
-
-
-
-
 
 
 
