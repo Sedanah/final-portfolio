@@ -13,8 +13,10 @@ export const ProjectCard = ({
 }) => {
   const stack = techStack.split(", ");
   return (
-    <div className="transition ease-in-out hover:-translate-y-1 flex px-5 py-8 flex-col gap-2 justify-between bg-[#112240] hover:bg-[#14342d] text-white rounded">
-      <div className="flex flex-row items-center justify-between">
+
+    <div className="transition ease-in-out hover:-translate-y-1 flex px-4 sm:px-5 py-8 flex-col gap-2 justify-between bg-[#112240] hover:bg-[#14342d] text-white rounded">
+  
+    <div className="flex flex-row items-center justify-between">
         <h3 className="text-xl font-bold text-white/90">{projectName}</h3>
         {githubLink && (
           <div className="flex items-center">
@@ -39,7 +41,10 @@ export const ProjectCard = ({
           </span>
         ))}
       </div>
+    
     </div>
+
+
   );
 };
 
@@ -64,7 +69,7 @@ const projects = [
     description:
       "Assisting in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributing expertise in research, literature review, product design, prototyping, and coding. ",
     techStack: "Python, SolidWorks, Arduino",
-    liveLink: "https://www.giveahandclub.org/projects-7",
+    liveLink: "/Abstract.HM.pdf",
   },
 
   {
@@ -154,16 +159,19 @@ export default function Page() {
           </Link>
         </nav>
       </header>
+      <main className="px-4">
       <section className="pb-6">
         <h2 className="mb-4 text-xl font-semibold text-[#64ffda]">
           Projects
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
         </div>
       </section>
+      </main>
     </div>
+    
   );
 }

@@ -230,7 +230,7 @@ export const ExperienceSection = () => {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-10">
       <ExperienceCard {...experiences[0]} />
       {showAll &&
         experiences.slice(1).map((experience, index) => (
@@ -239,7 +239,7 @@ export const ExperienceSection = () => {
       <div className="flex justify-center mt-8 ">
         <button
           onClick={toggleShowAll}
-          className="text-[#64ffda]  bg-[#112240] border-solid border-2 border-[#64ffda] rounded animate-pulse px-4 py-2"
+          className="text-[#64ffda]  bg-[#112240] border-solid border-2 border-[#64ffda] rounded animate-pulse px-4 py-4"
         >
           {showAll ? "Show Less" : "Show More"}
         </button>
