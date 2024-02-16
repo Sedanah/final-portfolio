@@ -70,7 +70,7 @@ export default function Home() {
   <div className="flex justify-between items-center mb-4">
     <h2 className="text-base font-semibold text-[#64ffda]">Projects</h2>
     <Link href="/projects">
-      <div className="  text-sm text-[#64ffda] font-semibold bg-[#0A1930] hover:bg-[#14342d] transition duration-300 ease-in-out py-3 px-2 rounded animate-bounce">
+      <div className="  text-sm text-[#64ffda] font-semibold bg-[#0A1930] hover:bg-[#164e63] transition duration-300 ease-in-out py-3 px-2 rounded animate-bounce">
         View more projects
       </div> 
     </Link>
@@ -178,7 +178,7 @@ export const ProjectCard = ({
   const stack = techStack.split(", ");
 
   return (
-    <div className="transition ease-in-out hover:-translate-y-1 flex px-4 sm:px-5 py-8 flex-col gap-2 justify-between bg-[#112240] hover:bg-[#14342d] text-white rounded">
+    <div className="transition ease-in-out hover:-translate-y-1 flex px-4 sm:px-5 py-8 flex-col gap-2 justify-between bg-[#112240] hover:bg-[#083344] text-white rounded">
       <div className="flex flex-row items-center justify-between">
         <h3 className="text-xl font-bold text-white/90">{projectName}</h3>
         {githubLink && (
