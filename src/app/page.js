@@ -3,10 +3,14 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 import { Github, Share, BookMarked, Linkedin, Link2 } from "lucide-react";
+import { motion } from 'framer-motion';
+
 
 export default function Home() {
   return (
+   
     <div className="max-w-xl mx-auto ">
+    
       <header className="flex justify-between px-4 pt-16 pb-16">
         <Link href="https://www.linkedin.com/in/hadiahmashhour/">
           <h1 className="text-base font-semibold text-white">
@@ -14,6 +18,12 @@ export default function Home() {
             <Linkedin />
           </h1>
         </Link>
+        <motion.div
+    initial={{ opacity: 0, y: -40 }}
+    animate={{ opacity: 1, y: 0 }}
+     transition={{ duration: .5 }}
+     className="transition ease-in-out"
+   >
         <nav className="flex gap-4">
           <Link href="/projects" className="text-base font-semibold text-white">
             Projects
@@ -29,8 +39,15 @@ export default function Home() {
             Contact
           </Link>
         </nav>
+        </motion.div>
       </header>
 
+      <motion.div
+    initial={{ opacity: 0, y: -20}}
+    animate={{ opacity: 1, y: 0 }}
+     transition={{ duration: .7 }}
+     className="transition ease-in-out"
+   >
       <main className="px-4">
         <section className="pb-10">
           <h1 className="mb-4 text-4xl font-semibold text-white">
@@ -53,10 +70,13 @@ export default function Home() {
               />{" "}
               <br />
             </span>
+         
             <span className="text-white/60">
               Passionate about crafting digital experiences
             </span>
+            
           </h1>
+     
           <p className="text-base leading-6 text-white/70">
             Hey, I am Hadiah! (but go by Sedanah). I am a student at
             Northeastern University majoring in Computer Science and Business
@@ -64,8 +84,14 @@ export default function Home() {
             passion and pushes me closer to creating impactful connections in
             the digital realm.
           </p>
+          
         </section>
-
+        <motion.div
+ initial={{ opacity: 0, y: -20 }}
+ animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1}}
+  className="transition ease-in-out"
+>
         <section className="pb-6 ">
   <div className="flex justify-between items-center mb-4">
     <h2 className="text-base font-semibold text-[#64ffda]">Projects</h2>
@@ -128,7 +154,10 @@ export default function Home() {
             </section>
           </section>
         </section>
+        </motion.div>
+
       </main>
+      </motion.div>
     </div>
   );
 }

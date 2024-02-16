@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Github, BookMarked, Share, Linkedin , Home} from "lucide-react";
+import { motion } from "framer-motion";
 
 export const ProjectCard = ({
   projectName,
@@ -12,6 +13,7 @@ export const ProjectCard = ({
 }) => {
   const stack = techStack.split(", ");
   return (
+  
     <div className="transition ease-in-out hover:-translate-y-1 flex px-4 sm:px-5 py-8 flex-col gap-2 justify-between bg-[#112240] hover:bg-[#14342d] text-white rounded">
       <div className="flex flex-row items-center justify-between">
         <h3 className="text-xl font-bold text-white/90">{projectName}</h3>
@@ -146,6 +148,12 @@ export default function Page() {
            </div>
           
         </Link>
+        <motion.div
+    initial={{ opacity: 0, y: -20}}
+    animate={{ opacity: 1, y: 0 }}
+     transition={{ duration: .5 }}
+     className="transition ease-in-out"
+   >
         <nav className="flex gap-4">
           <Link href="/projects" className="text-base font-semibold text-white">
             Projects
@@ -157,9 +165,11 @@ export default function Page() {
             Contact
           </Link>
         </nav>
+        </motion.div>
       </header>
       <main className="px-4">
       <section className="pb-6">
+      
         <h2 className="mb-4 text-xl font-semibold text-[#64ffda]">
           Projects
         </h2>
