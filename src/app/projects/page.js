@@ -1,9 +1,8 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { Github, Share, Linkedin , Home} from "lucide-react";
+import { Github, BookMarked, Share, Linkedin , Home} from "lucide-react";
 
-// Define the ProjectCard component
 export const ProjectCard = ({
   projectName,
   description,
@@ -13,10 +12,8 @@ export const ProjectCard = ({
 }) => {
   const stack = techStack.split(", ");
   return (
-
     <div className="transition ease-in-out hover:-translate-y-1 flex px-4 sm:px-5 py-8 flex-col gap-2 justify-between bg-[#112240] hover:bg-[#14342d] text-white rounded">
-  
-    <div className="flex flex-row items-center justify-between">
+      <div className="flex flex-row items-center justify-between">
         <h3 className="text-xl font-bold text-white/90">{projectName}</h3>
         {githubLink && (
           <div className="flex items-center">
@@ -28,7 +25,12 @@ export const ProjectCard = ({
         {liveLink && (
           <div className="flex items-center">
             <a href={liveLink} target="_blank" rel="noopener noreferrer">
-              <Share className="w-6 h-6" />
+              {/* Use the Book icon for the "Bionic Hand" project */}
+              {liveLink === "/Abstract.HM.pdf" ? (
+                <BookMarked className="w-6 h-6" />
+              ) : (
+                <Share className="w-6 h-6" />
+              )}
             </a>
           </div>
         )}
@@ -41,10 +43,7 @@ export const ProjectCard = ({
           </span>
         ))}
       </div>
-    
     </div>
-
-
   );
 };
 
@@ -94,14 +93,14 @@ const projects = [
       "Conducting comprehensive user research to identify usability pain points, leading to the implementation of a more intuitive navigation system and responsive design, ensuring seamless access across various devices and screen sizes. ",
     techStack: "React, Next.js, TailwindCSS",
     githubLink: "",
-    liveLink: "https://nuscimagazine.com/",
+    liveLink: "",
   },
   {
     projectName: "Tutoring for Kids",
     description:
       "An inclusive educational platform offering free tutoring to disadvantaged children.",
     techStack: "React, Next.js, TailwindCSS",
-    githubLink: "www.github.com",
+    githubLink: "",
     liveLink: "",
   },
   {
@@ -109,7 +108,7 @@ const projects = [
     description:
       "Developed an advanced stock prediction web application leveraging machine learning models and real-time data analysis to empower investors with accurate insights.",
     techStack: "Python",
-    githubLink: "www.github.com",
+    githubLink: "",
     liveLink: "",
   },
   {
@@ -117,7 +116,7 @@ const projects = [
     description:
       "Designed using the MVC design pattern, a photo editor that allows users to edit photos using a variety of tools.",
     techStack: "Java, Swing, MVC",
-    githubLink: "www.github.com",
+    githubLink: "",
     liveLink: "",
   },
   {
