@@ -52,7 +52,7 @@ export const ProjectCard = ({
 const projects = [
 
   {
-    projectName: "AI-Enhanced Breast Cancer Detection and Classification",
+    projectName: "Breast Cancer Detection",
     description:
       "Developing an AI-based system to enhance the accuracy and efficiency of breast cancer detection and classification. By leveraging advanced machine learning algorithms, particularly deep learning, the system will analyze medical images or patient data to distinguish between benign and malignant breast tumors.",
     techStack: "Python, TensorFlow, Keras",
