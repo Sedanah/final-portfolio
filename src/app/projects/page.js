@@ -27,7 +27,6 @@ export const ProjectCard = ({
         {liveLink && (
           <div className="flex items-center">
             <a href={liveLink} target="_blank" rel="noopener noreferrer">
-              {/* Use the Book icon for the "Bionic Hand" project */}
               {liveLink === "/Abstract.HM.pdf" ? (
                 <BookMarked className="w-6 h-6" />
               ) : (
@@ -163,13 +162,13 @@ export default function Page() {
      className="transition ease-in-out"
    >
         <nav className="flex gap-4">
-          <Link href="/projects" className="text-base font-semibold text-white">
+          <Link href="/projects" className="text-base font-semibold text-white hover:bg-[#64ffda]">
             Projects
           </Link>
-          <Link href="/resume.pdf" className="text-base font-semibold text-white">
+          <Link href="/resume.pdf" className="text-base font-semibold text-white hover:bg-[#64ffda]">
             Resume
           </Link>
-          <Link href="/#contact" className="text-base font-semibold text-white">
+          <Link href="/#contact" className="text-base font-semibold text-white hover:bg-[#64ffda]">
             Contact
           </Link>
         </nav>
