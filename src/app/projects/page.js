@@ -162,13 +162,13 @@ export default function Page() {
      className="transition ease-in-out"
    >
         <nav className="flex gap-4">
-          <Link href="/projects" className="text-base font-semibold text-white hover:bg-[#64ffda]">
+          <Link href="/projects" className="text-base font-semibold text-white hover:text-[#64ffda]">
             Projects
           </Link>
-          <Link href="/resume.pdf" className="text-base font-semibold text-white hover:bg-[#64ffda]">
+          <Link href="/resume.pdf" className="text-base font-semibold text-white hover:text-[#64ffda]">
             Resume
           </Link>
-          <Link href="/#contact" className="text-base font-semibold text-white hover:bg-[#64ffda]">
+          <Link href="/#contact" className="text-base font-semibold text-white hover:text-[#64ffda]">
             Contact
           </Link>
         </nav>
