@@ -54,7 +54,7 @@ const projects = [
   {
     projectName: "AI-Enhanced Breast Cancer Detection and Classification",
     description:
-      "This project aims to develop an AI-based system to enhance the accuracy and efficiency of breast cancer detection and classification. By leveraging advanced machine learning algorithms, particularly deep learning, the system will analyze medical images or patient data to distinguish between benign and malignant breast tumors. The process involves collecting and preprocessing data, extracting relevant features, training the model on labeled datasets, and evaluating its performance to ensure high sensitivity and specificity.",
+      "Developing an AI-based system to enhance the accuracy and efficiency of breast cancer detection and classification. By leveraging advanced machine learning algorithms, particularly deep learning, the system will analyze medical images or patient data to distinguish between benign and malignant breast tumors.",
     techStack: "Python, TensorFlow, Keras",
     githubLink: "",
   },
