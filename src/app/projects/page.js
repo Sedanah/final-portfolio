@@ -50,6 +50,14 @@ export const ProjectCard = ({
 };
 
 const projects = [
+
+  {
+    projectName: "Breast Cancer Detection",
+    description:
+      "Developing a machine learning model to detect breast cancer in mammograms, leveraging transfer learning and deep learning techniques to achieve high accuracy. ",
+    techStack: "Python, TensorFlow, Keras",
+    githubLink: "",
+  },
   {
     projectName: "NomadNet",
     description:

@@ -56,7 +56,7 @@ export default function Home() {
               <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed out once, initially l
-                  " Sedanah",
+                  " Hadiah",
                   2000,
                   " a developer",
                   1000,
@@ -213,22 +213,24 @@ export const ProjectCard = ({
         {githubLink && (
           <div className="flex items-center">
             <a href={githubLink} target="_blank" rel="noopener noreferrer">
-              <Github className="w-6 h-6" />
+              <Github className="w-6 h-6 text-[#64ffda]" />
             </a>
           </div>
         )}
         {liveLink && (
-          <div className="flex items-center">
-            <a href={liveLink} target="_blank" rel="noopener noreferrer">
-              {/* Use the Book icon for the "Bionic Hand" project */}
-              {liveLink === "/Abstract.HM.pdf" ? (
-                <BookMarked className="w-6 h-6" />
-              ) : (
-                <Share className="w-6 h-6" />
-              )}
-            </a>
-          </div>
-        )}
+  <div className="flex items-center">
+    <a href={liveLink} target="_blank" rel="noopener noreferrer">
+      {liveLink === "/Abstract.HM.pdf" ? (
+        <div className="relative">
+          <BookMarked className="w-6 h-6 text-[#64ffda]" />
+          <div className="ping-circle"></div> {/* Add this line for the blue circle */}
+        </div>
+      ) : (
+        <Share className="w-6 h-6" />
+      )}
+    </a>
+  </div>
+)}
       </div>
       <p className="text-sm text-white/70">{description}</p>
       <div className="flex flex-row flex-wrap gap-2">
@@ -281,6 +283,8 @@ export const ExperienceSection = () => {
   );
 };
 const experiences = [
+
+
   {
     date: "Jan 2024 - Present",
     company: "Oasis",
