@@ -324,7 +324,7 @@ const experiences = [
     company: "AeroSpaceNU",
     role: "Software Developer",
     description:
-      "Working in the avionics division to develop PCBs and software for flight control and data aquisition boards (FCBs) dedicated to enhancing control and data recording capabilities for rocket launches. Adding features such as live telemetry through radio communication and extensive flight data logging.",
+      "Working in the avionics division to develop PCBs and software for flight control and data aquisition boards (FCBs) dedicated to enhancing control and data recording capabilities for rocket launches. ",
   },
 
   {
