@@ -56,7 +56,7 @@ export default function Home() {
               <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed out once, initially l
-                  " Sedanah",
+                  "Sedanah",
                   2000,
                   " a developer",
                   1000,
@@ -317,7 +317,7 @@ const experiences = [
     role: "Software Developer",
 
     description:
-    "Developing software to create an affordable bionic prosthetic hand. Contributing to the product design, research, and prototyping phases. Developing a machine learning based software solution"},
+    "Developing software to create an affordable bionic prosthetic hand. Contributing to the product design, research, and prototyping phases. "},
 
   {
     date: "Dec 2023 - Present",

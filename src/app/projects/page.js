@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { Github, BookMarked, Share, Linkedin , Home} from "lucide-react";
+import { Github, BookMarked, Share, Linkedin , Home, ArrowBigLeft} from "lucide-react";
 import { motion } from "framer-motion";
 
 export const ProjectCard = ({
