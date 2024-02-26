@@ -49,17 +49,19 @@ export const ProjectCard = ({
 const projects = [
 
   {
-    projectName: "Breast Cancer Detection",
-    description:
-      "My research on the development of a system to enhance the accuracy and efficiency of breast cancer detection and classification. ",
-  
-  },
-  {
     projectName: "Bionic Hand",
     description:
       " A comprehensive research thesis on the development of a bionic hand that can be controlled by the user's brain signals. ",
    
   },
+
+  {
+    projectName: "Breast Cancer Detection",
+    description:
+      "My research on the development of a system to enhance the accuracy and efficiency of breast cancer detection and classification. ",
+  
+  },
+  
   {
     projectName: "DeFi Savings Platform",
     description:
