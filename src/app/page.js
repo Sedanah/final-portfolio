@@ -227,8 +227,7 @@ export const ProjectCard = ({
     <a href={liveLink} target="_blank" rel="noopener noreferrer">
       {liveLink === "/Abstract.HM.pdf" ? (
         <div className="relative">
-          <BookMarked className="w-6 h-6 text-[#64ffda]" />
-          <div className="ping-circle"></div> {/* Add this line for the blue circle */}
+          
         </div>
       ) : (
         <Share className="w-6 h-6" />
