@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
-import { Github, Share, BookMarked, Linkedin, Link2 } from "lucide-react";
+import { Github, Share, BookMarked, Linkedin, Link2, Mail } from "lucide-react";
 import { motion } from 'framer-motion';
 
 
@@ -25,6 +25,11 @@ export default function Home() {
      className="transition ease-in-out"
    >
         <nav className="flex gap-4">
+
+        <Link href = "/writing" className = "text-base font-semibold text-white hover:text-[#64ffda]">
+        Writing
+        </Link>
+            
           <Link href="/projects" className="text-base font-semibold text-white hover:text-[#64ffda]">
             Projects
           </Link>
@@ -36,7 +41,7 @@ export default function Home() {
             Resume
           </Link>
           <Link className="text-base font-semibold text-white  hover:text-[#64ffda]" href="/#contact">
-            Contact
+            <Mail />  
           </Link>
         </nav>
         </motion.div>
