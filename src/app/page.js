@@ -26,13 +26,15 @@ export default function Home() {
    >
         <nav className="flex gap-4">
 
+        <Link href="/projects" className="text-base font-semibold text-white hover:text-[#64ffda]">
+            Projects
+          </Link>
+
         <Link href = "/writing" className = "text-base font-semibold text-white hover:text-[#64ffda]">
         Writing
         </Link>
             
-          <Link href="/projects" className="text-base font-semibold text-white hover:text-[#64ffda]">
-            Projects
-          </Link>
+         
 
           <Link
             href="/Resume.pdf"
