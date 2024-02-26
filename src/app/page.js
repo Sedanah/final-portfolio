@@ -40,8 +40,8 @@ export default function Home() {
           >
             Resume
           </Link>
-          <Link className="text-base font-semibold text-white  hover:text-[#64ffda]" href="/#contact">
-            <Mail />  
+          <Link className="text-base font-semibold text-white  hover:text-[#64ffda]" href="mailto:mashhour.h@northeastern.edu">
+            <Mail/>  
           </Link>
         </nav>
         </motion.div>
