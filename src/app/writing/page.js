@@ -10,49 +10,43 @@ export const ProjectCard = ({
   techStack,
   githubLink,
   liveLink,
+  detailLink, // Use this prop for the custom link
 }) => {
-
-
-  const today = new Date();
   const dateString = "January 2024";
 
-  return (
-  
+  // Conditionally render the content inside a Link if detailLink is provided
+  const cardContent = (
     <div className="transition ease-in-out hover:-translate-y-1 flex px-4 sm:px-5 py-8 flex-col gap-2 justify-between bg-[#112240] hover:bg-[#083344] text-white rounded">
       <div className="flex flex-row items-center justify-between">
         <h3 className="text-xl font-bold text-white/90">{projectName}</h3>
-        <span className="text-sm text-white/70">{dateString}</span> 
-        {githubLink && (
-          <div className="flex items-center">
-            <a href={githubLink} target="_blank" rel="noopener noreferrer">
-              <Github className="w-6 h-6" />
-            </a>
-          </div>
-        )}
-
-       
-     
-
-
-       
+        <span className="text-sm text-white/70">{dateString}</span>
       </div>
       <p className="text-sm text-white/70">{description}</p>
-      <div className="flex flex-row flex-wrap gap-2">
-     
-         
-        
-      </div>
     </div>
   );
+
+  return detailLink ? (
+    <Link href={detailLink} passHref>
+      <div target="_blank" rel="noopener noreferrer">
+        {cardContent}
+      </div>
+    </Link>
+  ) : (
+    cardContent
+  );
 };
+
+
+       
+     
+
 
 const projects = [
 
   {
     projectName: "Bionic Hand",
-    description:
-      " A comprehensive research thesis on the development of a bionic hand that can be controlled by the user's brain signals. ",
-   
+    description: "A comprehensive research thesis on the development of a bionic hand that can be controlled by the user's brain signals.",
+    detailLink: "/Abstract.HM.pdf", // This project has a specific link
   },
 
   {
@@ -69,12 +63,6 @@ const projects = [
    
   },
   
-  {
-    projectName: "NomadNet",
-    description:
-      "Leading the development of a travel planning platform designed to connect like-minded travelers, facilitating shared experiences and collaborative itinerary creation. ",
-   
-  },
 
   
 
@@ -124,10 +112,11 @@ export default function Page() {
           Writing
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 rounded">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
-          ))}
-        </div>
+  {projects.map((project, index) => (
+    <ProjectCard key={index} {...project} />
+  ))}
+</div>
+
       </section>
       </main>
     </div>
