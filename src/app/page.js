@@ -5,7 +5,6 @@ import { useState } from "react";
 import { Github, Share, BookMarked, Linkedin, Link2, Mail } from "lucide-react";
 import { motion } from 'framer-motion';
 
-
 export default function Home() {
   return (
    
