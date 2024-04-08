@@ -7,9 +7,7 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-   
     <div className="max-w-xl mx-auto ">
-    
       <header className="flex justify-between px-4 pt-16 pb-16">
         <Link href="https://www.linkedin.com/in/hadiahmashhour/">
           <h1 className="text-base font-semibold text-white">
@@ -32,9 +30,6 @@ export default function Home() {
         <Link href = "/writing" className = "text-base font-semibold text-white hover:text-[#64ffda]">
         Writing
         </Link>
-            
-         
-
           <Link
             href="/Resume.pdf"
             className="text-base font-semibold text-white hover:text-[#64ffda]"
@@ -288,6 +283,19 @@ export const ExperienceSection = () => {
   );
 };
 const experiences = [
+
+
+{
+  date: "July 2024 - December 2024",
+  company: "Verizon",
+  role: "Incoming Software Engineer Co-op",
+},
+
+{ 
+  date: "July 2024",
+  company: "Amazon",
+  role: "Incoming Software Developer Intern"
+},
 
 
   {
