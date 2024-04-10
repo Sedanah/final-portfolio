@@ -302,7 +302,7 @@ const experiences = [
     date: "Jan 2024 - Present",
     company: "Oasis",
     hyperlink: "https://oasisneu.com/",
-    role: " Mentor",
+    role: " Team Lead",
     description:
       "Leading a team of four in the development of a cross-platform mobile application utilizing various frameworks. ",
   },
