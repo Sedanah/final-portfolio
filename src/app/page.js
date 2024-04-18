@@ -291,13 +291,6 @@ const experiences = [
   role: "Incoming Software Engineer Co-op",
 },
 
-{ 
-  date: "Fall 2024",
-  company: "Amazon",
-  role: "Incoming Software Developer Intern"
-},
-
-
   {
     date: "Jan 2024 - Present",
     company: "Oasis",
