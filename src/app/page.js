@@ -32,8 +32,7 @@ export default function Home() {
         </Link>
           <Link
             href="/Resume.pdf"
-            className="text-base font-semibold text-white hover:text-[#64ffda]"
-          >
+            className="text-base font-semibold text-white hover:text-[#64ffda]">
             Resume
           </Link>
           <Link className="text-base font-semibold text-white  hover:text-[#64ffda]" href="mailto:mashhour.h@northeastern.edu">
