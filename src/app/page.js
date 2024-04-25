@@ -1,13 +1,33 @@
 "use client";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Github, Share, BookMarked, Linkedin, Link2, Mail } from "lucide-react";
 import { motion } from 'framer-motion';
 
+
 export default function Home() {
-  return (
+    // // State to manage theme (defaulting to system preference or 'light')
+    // const [theme, setTheme] = useState(() => {
+    //   return localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    // });
+  
+    // // Toggle theme and store preference
+    // const toggleTheme = () => {
+    //   const newTheme = theme === 'light' ? 'dark' : 'light';
+    //   setTheme(newTheme);
+    //   localStorage.setItem('theme', newTheme);
+    // };
+  
+    // // Apply the theme class to the body
+    // useEffect(() => {
+    //   document.body.className = theme;
+    // }, [theme]);
+  
+    return (
+
     <div className="max-w-xl mx-auto ">
+    {/* // <button onClick={toggleTheme}>Toggle Theme</button> */}
       <header className="flex justify-between px-4 pt-16 pb-16">
         <Link href="https://www.linkedin.com/in/hadiahmashhour/">
           <h1 className="text-base font-semibold text-white">
@@ -163,6 +183,7 @@ export default function Home() {
 }
 
 const projects = [
+  
   {
     projectName: "NomadNet",
     description:
@@ -196,6 +217,7 @@ const projects = [
 
   
 ];
+
 
 export const ProjectCard = ({
   projectName,
