@@ -2,8 +2,9 @@
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { useEffect, useState } from "react";
-import { Github, Share, BookMarked, Linkedin, Link2, Mail } from "lucide-react";
+import { Github, Heart, Share, BookMarked, Linkedin, Link2, Mail } from "lucide-react";
 import { motion } from 'framer-motion';
+
 
 
 export default function Home() {
@@ -41,26 +42,30 @@ export default function Home() {
      transition={{ duration: .5 }}
      className="transition ease-in-out"
    >
-        <nav className="flex gap-4">
 
+   {/* //make a responsive side navbar when the screen is small */}
+
+<nav className="flex gap-4">
         <Link href="/projects" className="text-base font-semibold text-white hover:text-[#64ffda]">
             Projects
           </Link>
-
-        <Link href = "/writing" className = "text-base font-semibold text-white hover:text-[#64ffda]">
-        Writing
-        </Link>
+          <Link href="/writing" className="text-base font-semibold text-white hover:text-[#64ffda]">
+            Writing
+          </Link>
           <Link
             href="/Resume.pdf"
             className="text-base font-semibold text-white hover:text-[#64ffda]">
             Resume
-          </Link>
+            </Link>
           <Link className="text-base font-semibold text-white  hover:text-[#64ffda]" href="mailto:mashhour.h@northeastern.edu">
             <Mail/>  
           </Link>
         </nav>
-        </motion.div>
-      </header>
+
+
+        </motion.div> 
+      </header> 
+
 
       <motion.div
     initial={{ opacity: 0, y: -20}}
@@ -122,8 +127,6 @@ export default function Home() {
     </Link>
   </div>
 
-            
-
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
@@ -174,6 +177,26 @@ export default function Home() {
             </section>
           </section>
         </section>
+{/* 
+//make a footer for the page that stays at the bottom of the page that says "Made with ❤️ by Sedanah" */}
+
+        <motion.div
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+            
+  transition={{ duration: 1}}
+  className="transition ease-in-out"
+>
+
+<div className="border-t border-white/10"></div>
+<footer className="flex justify-center items-center py-8 text-white/70">
+  Made with <span className="px-1"><Heart/></span> by Sedanah
+</footer>
+
+
+
+
+        </motion.div>
         </motion.div>
 
       </main>
@@ -187,7 +210,7 @@ const projects = [
   {
     projectName: "NomadNet",
     description:
-      "Leading the development of a travel planning platform designed to connect like-minded travelers, facilitating shared experiences and collaborative itinerary creation. Implementing key features including a sophisticated matching algorithm to connect users with similar travel plans. Deploying a CI/CD pipeline for efficient development, testing, and deployment processes.",
+      "Leading the development of a travel planning platform designed to connect and faciliate collaborative itinerary creation. Deploying a CI/CD pipeline for efficient development, testing, and deployment processes.",
     techStack: "React, TailwindCSS, MongoDB",
     githubLink: "",
   },
@@ -195,14 +218,14 @@ const projects = [
   {
     projectName: "DeFi Savings Platform",
     description:
-      "Building a platform that enables users to earn interest on their cryptocurrency holdings through a decentralized savings account. Unlike traditional savings accounts, this DeFi application operates on blockchain technology, ensuring transparency, security, and without the need for intermediaries like banks.",
+      "Building a platform that enables users to earn interest on their cryptocurrency holdings through a decentralized savings account. Ensures transparency, security, and without the need for intermediaries like banks.",
     techStack: "Solidity, Ethereum, Web3.js, Metamask",
     githubLink: "",
   },
   {
     projectName: "Bionic Hand",
     description:
-      "Assisting in the software integration for a pioneering project creating an affordable bionic hand for underprivelged children. Contributing expertise in research, literature review, product design, prototyping, and coding. ",
+      "Integrating software creating an affordable bionic hand for underprivelged children. Contributing expertise in research, literature review, product design, prototyping, and coding. ",
     techStack: "Python, SolidWorks, Arduino",
     liveLink: "/Abstract.HM.pdf",
   },
@@ -210,7 +233,7 @@ const projects = [
   {
     projectName: "Redshift",
     description:
-      "Working on the avionics division specializing in developing PCBs and software for flight control boards (FCBs) and data acquisition boards, enhancing control and data recording during rocket launches. Using various software tools to continually add new features and improvements to the FCB and ground station software.",
+      "Working on the avionics division specializing in developing PCBs and software for flight control boards (FCBs) and data acquisition boards, enhancing control and data recording during rocket launches. Improving FCB and ground station software.",
     techStack: "Flutter, C, C#, Arduino",
     liveLink: "https://www.aerospacenu.com/redshift",
   },
@@ -305,6 +328,12 @@ export const ExperienceSection = () => {
 };
 const experiences = [
 
+{
+  date: " 2024",
+  company: "Amazon",
+  role: "Incoming SDE intern",
+
+},
 
 {
   date: "July 2024 - Dec 2024",
@@ -359,14 +388,14 @@ const experiences = [
     company: "BWSC",
     role: "Security Engineer + IT Programmer Co-op",
     description:
-      "Worked with Azure Cloud infrastructure and Barracuda CloudGen firewalls to implement robust security measures. Collaborated with AI and Cybersecurity teams to contribute to the creation of machine learning models specialized in threat detection, anomaly detection, and behavior analysis.",
+      "Worked with Azure Cloud infrastructure and Barracuda CloudGen firewalls to improve security measures. Specialized in threat detection, anomaly detection, and behavior analysis.",
   },
   {
     date: "May 2022 - June 2022",
     company: "Harvard University",
-    role: "Bio-statistical Data Scientist",
+    role: "SWE & Data Science intern",
     description:
-      "Utilized R and Python to analyze extensive datasets, boosting data processing efficiency by 75% and maintaining data integrity; created a highly acclaimed user-friendly data visualization dashboard that garnered a 95% satisfaction rating from project stakeholders",
+      "Utilized R and Python to analyze extensive datasets, boosting data processing efficiency by 75% and maintaining data integrity; created a highly acclaimed user-friendly data visualization dashboard",
   },
  
   
