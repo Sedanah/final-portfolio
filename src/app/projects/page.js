@@ -180,11 +180,15 @@ export default function Page() {
         <h2 className="mb-4 text-xl font-semibold text-[#64ffda]">
           Projects
         </h2>
+        <h3 className="mb-4 text-lg font-semibold text-[#64ffda]">
+          2024
+          </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
         </div>
+        
       </section>
       </main>
     </div>

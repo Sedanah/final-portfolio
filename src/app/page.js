@@ -101,13 +101,22 @@ export default function Home() {
             </span>
             
           </h1>
-     
+
           <p className="text-base leading-6 text-white/70">
-            Hey, I am Hadiah! (but go by Sedanah). I am a student at
+            I am a student at
             Northeastern University majoring in Computer Science and Business
-            with a concentration in Finance. Each past adventure fuels my
+            with a concentration in Finance.  Each past adventure fuels my
             passion and pushes me closer to creating impactful connections in
             the digital realm.
+          </p>
+
+
+          <p className="text-base leading-6 text-white/70 py-2">
+         
+            
+            Outside of school, I'm passionate about the interconnected worlds of physics, aerospace, and mathematics.
+          I express my creativity through painting and enjoy exploring new music.
+
           </p>
           
         </section>
@@ -192,7 +201,6 @@ export default function Home() {
 <footer className="flex justify-center items-center py-8 text-white/70">
   Made with <span className="px-1"><Heart/></span> by Sedanah
 </footer>
-
 
 
 
