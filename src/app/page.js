@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import { useEffect, useState } from "react";
 import { Github, Heart, Share, BookMarked, Linkedin, Link2, Mail } from "lucide-react";
 import { motion } from 'framer-motion';
+import Navbar from "./Navbar.js";
 
 
 
@@ -45,7 +46,7 @@ export default function Home() {
 
    {/* //make a responsive side navbar when the screen is small */}
 
-<nav className="flex gap-4">
+{/* <nav className="flex gap-4">
         <Link href="/projects" className="text-base font-semibold text-white hover:text-[#64ffda]">
             Projects
           </Link>
@@ -60,8 +61,8 @@ export default function Home() {
           <Link className="text-base font-semibold text-white  hover:text-[#64ffda]" href="mailto:mashhour.h@northeastern.edu">
             <Mail/>  
           </Link>
-        </nav>
-
+        </nav> */}
+<Navbar/>
 
         </motion.div> 
       </header> 
