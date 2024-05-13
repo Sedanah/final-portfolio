@@ -10,7 +10,7 @@ const MenuOverlay = ({ links, onClose }) => {
         
                       
 
-        <div className="fixed top-0 left-0 w-full h-full bg-[#0a192f] bg-opacity-90 flex items-center justify-center">
+        <div className="fixed top-0 left-0 w-full h-full bg-[#0a192f] bg-opacity-90 z-40 flex items-center justify-center">
             <div className="flex flex-col items-center">
               
            
