@@ -98,7 +98,7 @@ export default function Home() {
           <p className="text-base leading-6 text-white/70 py-2">
          
             
-            Outside of school, I'm passionate about the interconnected worlds of physics, aerospace, and mathematics.
+            Outside of school, I am passionate about the interconnected worlds of physics, aerospace, and mathematics.
           I express my creativity through painting and enjoy exploring new music.
 
           </p>
