@@ -88,20 +88,14 @@ export default function Home() {
 
           <p className="text-base leading-6 text-white/70">
             I am a student at
-            Northeastern University majoring in Computer Science and Business
-            with a concentration in Finance.  Each past adventure fuels my
+            Northeastern University majoring in Computer Science, Business, and Chemical Engineering
+            with a concentration in Finance. Each past adventure fuels my
             passion and pushes me closer to creating impactful connections in
             the digital realm.
           </p>
 
 
-          <p className="text-base leading-6 text-white/70 py-2">
          
-            
-            Outside of school, I am passionate about the interconnected worlds of physics, aerospace, and mathematics.
-          I express my creativity through painting and enjoy exploring new music.
-
-          </p>
           
         </section>
         <motion.div
