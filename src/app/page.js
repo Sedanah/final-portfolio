@@ -9,23 +9,6 @@ import Navbar from "./Navbar.js";
 
 
 export default function Home() {
-    // // State to manage theme (defaulting to system preference or 'light')
-    // const [theme, setTheme] = useState(() => {
-    //   return localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    // });
-  
-    // // Toggle theme and store preference
-    // const toggleTheme = () => {
-    //   const newTheme = theme === 'light' ? 'dark' : 'light';
-    //   setTheme(newTheme);
-    //   localStorage.setItem('theme', newTheme);
-    // };
-  
-    // // Apply the theme class to the body
-    // useEffect(() => {
-    //   document.body.className = theme;
-    // }, [theme]);
-  
     return (
 
     <div className="max-w-xl mx-auto ">

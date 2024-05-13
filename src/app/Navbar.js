@@ -1,48 +1,68 @@
-import React from 'react';  
-import Link from "next/link";
-import { Mail } from "lucide-react";
+import React from 'react';
 import { AlignJustify, X } from 'lucide-react';
+import MenuOverlay from './MenuOverlay';
+import NavLink from './NavLink';
 
-const Navbar = () => {
 
+const navLinks = [
+    {
+      title: "Projects",
+      path: "/projects",
+    },
+    {
+      title: "Writing",
+      path: "/writing",
+    },
+    {
+      title: "Resume",
+      path: "/Resume.pdf",
+    },
+    {
+      title: "Contact",
+      path: "#contact",
+    },
+  ];
+
+  const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
+
     return (
         <nav> 
-        <div className = "mobile-menu block md:hidden">
-            {
-                !navbarOpen ? (
-                    <button onClick={() => setNavbarOpen(true)} className = "flex items-center px-3 py-2 border rounded border-slate-200  hover:text-white text-slate-200"> 
-                    <AlignJustify className = "h-5 w-5" />
-                    </button>
-                ) : (
-                    <button onClick={() => setNavbarOpen(false)} className = "flex items-center px-3 py-2 border rounded border-slate-200  hover:text-white text-slate-200"> 
-                    <X className = "h-5 w-5" />
-                    </button>
-                )
-            }
-        </div>
-        <div className = "menu hidden md:block md:w-auto">
-        <div className = "flex flex-wrap items-center justify-between mx-auto gap-4"> 
-        <Link href="/projects" className="text-base font-semibold text-white hover:text-[#64ffda]">
-            Projects
-          </Link>
-          <Link href="/writing" className="text-base font-semibold text-white hover:text-[#64ffda]">
-            Writing
-          </Link>
-          <Link
-            href="/Resume.pdf"
-            className="text-base font-semibold text-white hover:text-[#64ffda]">
-            Resume
-            </Link>
-          <Link className="text-base font-semibold text-white  hover:text-[#64ffda]" href="mailto:mashhour.h@northeastern.edu">
-            <Mail/>  
-</Link>
-</div>
-            </div>  
-        </nav>
-        
-    );
+            {/* <div className="mobile-menu block md:hidden">
+                <button onClick={() => setNavbarOpen(!navbarOpen)} className="flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white text-slate-200"> 
+                    {navbarOpen ? <X className="h-5 w-5" /> : <AlignJustify className="h-5 w-5" />}
+                </button>
+            </div> */}
 
+           <div className="mobile-menu block md:hidden">
+          {!navbarOpen ? (
+            <button
+              onClick={() => setNavbarOpen(true)}
+              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+            >
+              <AlignJustify className="h-5 w-5 z-50" />
+            </button>
+          ) : (
+            <button
+              onClick={() => setNavbarOpen(false)}
+              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+            >
+              <X className="h-5 w-5 z-50" />
+            </button>
+        )}
+        </div>
+            <div className="menu hidden md:block md:w-auto" id="navbar">
+                <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+                    {navLinks.map((link, index) => (
+                        <li key={index}>
+                            <NavLink href={link.path} title={link.title} />
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+        </nav>
+    );
 };
 
 export default Navbar;
