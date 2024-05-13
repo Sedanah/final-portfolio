@@ -338,14 +338,14 @@ const experiences = [
 
   {
     date: "Jan 2024 - Present",
-    company: "NU Blockchain",
+    company: "NUBlockchain",
     role: " Software Engineer",
     description:
       "Developing a decentralized application (dApp) to facilitate the exchange of digital assets and NFTs. ",
   },
   {
     date: "Jan 2024 - Present",
-    company: "NU Sci",
+    company: "NUScience Magazine",
     role: " Software Engineer",
     description:
       "Involved in full-stack web development divided in 5 phases of a custom guided project.",
