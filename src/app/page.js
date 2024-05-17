@@ -26,25 +26,6 @@ export default function Home() {
      transition={{ duration: .5 }}
      className="transition ease-in-out"
    >
-
-   {/* //make a responsive side navbar when the screen is small */}
-
-{/* <nav className="flex gap-4">
-        <Link href="/projects" className="text-base font-semibold text-white hover:text-[#64ffda]">
-            Projects
-          </Link>
-          <Link href="/writing" className="text-base font-semibold text-white hover:text-[#64ffda]">
-            Writing
-          </Link>
-          <Link
-            href="/Resume.pdf"
-            className="text-base font-semibold text-white hover:text-[#64ffda]">
-            Resume
-            </Link>
-          <Link className="text-base font-semibold text-white  hover:text-[#64ffda]" href="mailto:mashhour.h@northeastern.edu">
-            <Mail/>  
-          </Link>
-        </nav> */}
 <Navbar/>
 
         </motion.div> 
@@ -141,7 +122,8 @@ export default function Home() {
                 </div>
 
                 <div className="grid gap-4 ml-8 grid-cols-content">
-                  <Link href="/">
+               
+                  <Link href="mailto: mashhour.h@northeastern.edu">
                     {" "}
                     <span className="text-white/50">
                       {" "}
@@ -322,7 +304,7 @@ const experiences = [
 },
 
 {
-  date: "July 2024 - Dec 2024",
+  date: "June 2024 - Dec 2024",
   company: "Verizon",
   role: "Incoming Software Engineer Co-op",
 },

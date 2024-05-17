@@ -163,7 +163,7 @@ export default function Page() {
    >
         <nav className="flex gap-4">
         <Link href = "/writing" className = "text-base font-semibold text-white hover:text-[#64ffda]">
-        Writing
+        Research
         </Link>
           <Link href="/resume.pdf" className="text-base font-semibold text-white hover:text-[#64ffda]">
             Resume

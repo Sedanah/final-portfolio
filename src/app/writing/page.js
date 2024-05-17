@@ -109,7 +109,7 @@ export default function Page() {
       <section className="pb-6">
       
         <h2 className="mb-4 text-xl font-semibold text-[#64ffda]">
-          Writing
+          Research
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 rounded">
   {projects.map((project, index) => (

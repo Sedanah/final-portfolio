@@ -10,7 +10,7 @@ const navLinks = [
       path: "/projects",
     },
     {
-      title: "Writing",
+      title: "Research",
       path: "/writing",
     },
     {
@@ -28,26 +28,21 @@ const navLinks = [
 
     return (
         <nav> 
-            {/* <div className="mobile-menu block md:hidden">
-                <button onClick={() => setNavbarOpen(!navbarOpen)} className="flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white text-slate-200"> 
-                    {navbarOpen ? <X className="h-5 w-5" /> : <AlignJustify className="h-5 w-5" />}
-                </button>
-            </div> */}
 
            <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-[#64ffda] text-slate-200 hover:text-white"
             >
-              <AlignJustify className="h-5 w-5 z-50" />
+              <AlignJustify className="h-5 w-5 z-50 text-[#64ffda]" />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
               className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
             >
-              <X className="h-5 w-5 z-50" />
+              <X className="h-5 w-5 z-50 text-[#64ffda]" />
             </button>
         )}
         </div>
