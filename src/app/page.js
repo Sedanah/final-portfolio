@@ -296,6 +296,11 @@ export const ExperienceSection = () => {
 };
 const experiences = [
 
+{
+  date: "July 2024 - September 2024",
+  company: " HeadStarter",
+  role: "Software Engineer Fellow"
+},
 
 {
   date: "June 2024 - Dec 2024",
