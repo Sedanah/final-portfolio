@@ -306,6 +306,7 @@ const experiences = [
   date: "June 2024 - Dec 2024",
   company: "Verizon",
   role: "Incoming Software Engineer Co-op",
+  description: "5G Network Team"
 },
 
   {
