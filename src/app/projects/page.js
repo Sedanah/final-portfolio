@@ -50,6 +50,26 @@ export const ProjectCard = ({
 
 const projects = [
 
+
+  {projectName: "AI Rate My Professor",
+    description:
+      "support agent for 'Rate My Professor' built using data stored in PineCone. Advanced search and recommendation system implemented, enabling users to query and receive personalized professor recommendations based on their input criteria. Sentiment analysis and trend tracking integrated to provide insights into changes in professor ratings and review sentiments over time ",
+    techStack: "Next.JS, React, OpenAI, PineCone",
+    },
+
+  {projectName: "AI Flashcards & Stripe",
+    description:
+      "Developed an AI-powered flashcard application that uses machine learning algorithms to optimize the learning process. Integrated Stripe payment gateway to enable users to purchase premium features and services. ",
+    techStack: "React, FireBase, Stripe, OpenAi, Clerk",
+    githubLink: "",
+  },
+
+  {projectName: "AI Customer Support",
+    description:
+      "Developed an AI-based customer support system that uses natural language processing (NLP) to analyze customer queries and provide accurate responses. Integrated with various communication channels, including email, chat, and phone, to ensure seamless customer interactions.",
+    techStack: "Python, TensorFlow, PincCone",
+    githubLink: "",
+  },
   {
     projectName: "Breast Cancer Detection",
     description:
