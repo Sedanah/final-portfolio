@@ -199,11 +199,11 @@ const projects = [
   },
 
   {
-    projectName: "Redshift",
+    projectName: "AI Rate My Professor",
     description:
-      "Working on the avionics division specializing in developing PCBs and software for flight control boards (FCBs) and data acquisition boards, enhancing control and data recording during rocket launches. Improving FCB and ground station software.",
-    techStack: "Flutter, C, C#, Arduino",
-    liveLink: "https://www.aerospacenu.com/redshift",
+      "support agent for 'Rate My Professor' built using data stored in PineCone. Advanced search and recommendation system implemented, enabling users to query and receive personalized professor recommendations based on their input criteria. Sentiment analysis and trend tracking integrated to provide insights into changes in professor ratings and review sentiments over time ",
+    techStack: "Next.JS, React, OpenAI, PineCone",
+    
   },
 
   
