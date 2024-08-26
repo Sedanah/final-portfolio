@@ -201,7 +201,7 @@ const projects = [
   {
     projectName: "AI Rate My Professor",
     description:
-      "support agent for 'Rate My Professor' built using data stored in PineCone. Advanced search and recommendation system implemented, enabling users to query and receive personalized professor recommendations based on their input criteria. Sentiment analysis and trend tracking integrated to provide insights into changes in professor ratings and review sentiments over time ",
+      "Support agent for 'Rate My Professor'. Advanced search and recommendation system implemented, enabling users to query and receive personalized professor recommendations based on their input criteria. Sentiment analysis and trend tracking integrated to provide insights into changes in professor ratings",
     techStack: "Next.JS, React, OpenAI, PineCone",
     
   },
