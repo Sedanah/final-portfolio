@@ -3,7 +3,6 @@ import { AlignJustify, X } from 'lucide-react';
 import MenuOverlay from './MenuOverlay';
 import NavLink from './NavLink';
 
-
 const navLinks = [
     {
       title: "Projects",

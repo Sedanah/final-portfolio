@@ -53,7 +53,7 @@ const projects = [
 
   {projectName: "AI Rate My Professor",
     description:
-      "Support agent for Rate My Professor. Advanced search and recommendation system implemented, enabling users to query and receive personalized professor recommendations based on their input criteria. Sentiment analysis and trend tracking integrated to provide insights into changes in professor ratings",
+      "Advanced search and recommendation system implemented, enabling users to query and receive personalized professor recommendations based on their input criteria using sentiment analysis and trend tracking.",
     techStack: "Next.JS, React, OpenAI, PineCone",
     },
 

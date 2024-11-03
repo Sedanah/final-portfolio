@@ -69,7 +69,7 @@ export default function Home() {
 
           <p className="text-base leading-6 text-white/70">
             I am a student at
-            Northeastern University majoring in Computer Science, Business, and Chemical Engineering
+            Northeastern University majoring in Computer Science and Business
             with a concentration in Finance. Each past adventure fuels my
             passion and pushes me closer to creating impactful connections in
             the digital realm.
@@ -299,13 +299,14 @@ const experiences = [
 {
   date: "July 2024 - September 2024",
   company: " HeadStarter",
-  role: "Software Engineer Fellow"
+  role: "Software Engineer Fellow",
+  description: "Worked closely with a team to develop 5 AI projects in the fields of NLP, Computer Vision, and Reinforcement Learning.",
 },
 
 {
   date: "June 2024 - Dec 2024",
   company: "Verizon",
-  role: "Incoming Software Engineer Co-op",
+  role: "Network/Software Engineer Co-op",
   description: "5G Network Team"
 },
 
@@ -319,7 +320,7 @@ const experiences = [
   },
 
   {
-    date: "Jan 2024 - Present",
+    date: "Jan 2024 - June 2024",
     company: "NUBlockchain",
     role: " Software Engineer",
     description:
@@ -334,7 +335,7 @@ const experiences = [
   },
 
   {
-    date: "Jan 2024 - Present",
+    date: "Jan 2024 - April 2024",
 
     company: "Give a Hand",
 
@@ -344,7 +345,7 @@ const experiences = [
     "Developing software to create an affordable bionic prosthetic hand. Contributing to the product design, research, and prototyping phases. "},
 
   {
-    date: "Dec 2023 - Present",
+    date: "Dec 2023 - May 2024",
     company: "AeroSpaceNU",
     role: "Software Developer",
     description:
