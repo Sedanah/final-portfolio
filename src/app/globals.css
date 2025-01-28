@@ -24,9 +24,9 @@ body {
 
 .ping-circle {
   position: absolute;
-  top: -2px; /* Adjust these values based on the icon size */
+  top: -2px; 
   right: -2px;
-  width: 10px; /* Size of the ping circle */
+  width: 10px;
   height: 8px;
   background-color: #64ffda;
   border-radius: 100%;

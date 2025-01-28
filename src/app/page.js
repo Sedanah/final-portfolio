@@ -27,12 +27,9 @@ export default function Home() {
      className="transition ease-in-out"
    >
 <Navbar/>
-
         </motion.div> 
       </header> 
-
-
-      <motion.div
+     <motion.div
     initial={{ opacity: 0, y: -20}}
     animate={{ opacity: 1, y: 0 }}
      transition={{ duration: .7 }}
@@ -74,10 +71,6 @@ export default function Home() {
             passion and pushes me closer to creating impactful connections in
             the digital realm.
           </p>
-
-
-         
-          
         </section>
         <motion.div
  initial={{ opacity: 0, y: -20 }}
@@ -94,7 +87,6 @@ export default function Home() {
       </div> 
     </Link>
   </div>
-
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
@@ -113,16 +105,13 @@ export default function Home() {
               <h2 className="mb-4 text-base font-semibold text-white/90">
                 Contact
               </h2>
-
               <div className="flex">
                 <div className="grid gap-4 grid-cols-content">
                   <span className="text-white/50">Email</span>
                   <span className="text-white/50">LinkedIn</span>
                   <span className="text-white/50">Github</span>
                 </div>
-
                 <div className="grid gap-4 ml-8 grid-cols-content">
-               
                   <Link href="mailto: mashhour.h@northeastern.edu">
                     {" "}
                     <span className="text-white/50">
@@ -146,8 +135,7 @@ export default function Home() {
             </section>
           </section>
         </section>
-{/* 
-//make a footer for the page that stays at the bottom of the page that says "Made with ❤️ by Sedanah" */}
+{/* footer for the page that stays at the bottom of the page that says "Made with ❤️ by Sedanah" */}
 
         <motion.div
   initial={{ opacity: 0, y: -20 }}
@@ -161,17 +149,14 @@ export default function Home() {
 <footer className="flex justify-center items-center py-8 text-white/70">
   Made with <span className="px-1"><Heart/></span> by Sedanah
 </footer>
-
-
-
         </motion.div>
         </motion.div>
-
       </main>
       </motion.div>
     </div>
   );
 }
+
 
 const projects = [
   
@@ -205,8 +190,6 @@ const projects = [
     techStack: "Next.JS, React, OpenAI, PineCone",
     
   },
-
-  
 ];
 
 
@@ -296,6 +279,14 @@ export const ExperienceSection = () => {
 };
 const experiences = [
 
+  {
+    date: "May 2025",
+    company: "Google",
+    role: "Software Engineering Intern",
+    description:
+      "Joining the gCloud GCP team",
+  },
+  
 {
   date: "July 2024 - September 2024",
   company: " HeadStarter",
